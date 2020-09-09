@@ -1,0 +1,16 @@
+name: election-meta
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - python=3
+  - jupyter
+  - matplotlib
+  - notebook
+  - pandas
+  - requests
+  - beautifulsoup4
+  - seaborn
+  - statsmodels
+prefix: /Users/psthomas/miniconda3/envs/election-meta
+

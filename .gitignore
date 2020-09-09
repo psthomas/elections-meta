@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__
+.ipynb_checkpoints
+scraps.py
+simulation_scraps.ipynb
+data/archive/*
+!data/archive/.gitkeep
+notes/*

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset='UTF-8'>
+
+<title>State Power Values</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if !IE]><!-->
+<style>
+* { 
+  margin: 0; 
+  padding: 0; 
+}
+body {
+  /*font: 11px sans-serif;*/
+  font: 14px sans-serif; /*font: 9.5px 14px/1.4 Georgia, Serif;*/
+}
+#page-wrap {
+  /*margin: 50px;*/
+  margin: 0px auto;
+  max-width:700px;
+}
+p {
+  margin: 20px 0; 
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table {
+  font: 12px/1.4 sans-serif; /*9.5*/
+  width: 100%;
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+/*tr:nth-of-type(odd) { 
+  background: #eee; 
+}*/
+td, th { 
+  padding: 2px; /*2px 0px 6px*/
+  /*border: 1px solid transparent;*/ /*1px solid #ccc*/
+/*  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;*/
+  text-align: center; /*left*/
+}
+th {
+  padding: 4px;
+  background: #dadada; /*#333 #dadada*/
+  min-width: 50px;
+  /*color: white;*/ 
+  font-weight: bold; 
+  cursor: pointer; /*s-resize*/
+  background-repeat: no-repeat;
+  background-position: 3% center;
+}
+tr {
+  /*border: 1px solid transparent;*/
+/*  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;*/
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+tr:hover td {
+  /*border-color: #111;*/
+  /*border: 1px solid #aaa;*/
+/*  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;*/
+  /*background-color: #ddd;*/
+}
+input {
+  width:18px;
+}
+
+th.des:after {
+  /*content: "\21E9";*/
+  /*content: "\8595";*/
+  content: "\25BC";
+}
+/*
+th.aes:after {
+  content: "\21E7";
+}*/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+/*@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  body { 
+    padding: 0; 
+    margin: 0; 
+    width: 320px;
+  }
+}*/
+
+/* iPads (portrait and landscape) ----------- */
+/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body { 
+    width: 495px; 
+  }
+}*/
+</style>
+<!--
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { border: 1px solid #ccc; }
+  
+  td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+  /*
+  Label the data
+  */
+  td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 6.5em;
+    display: inline-block;
+  }
+}-->
+
+
+<!--<![endif]-->
+</head>
+<body>
+
+<div id="page-wrap">
+  <div style="float:right;padding: 8px 0px;">
+    <form>
+    <span style="font-weight:bold;">Weights: </span> <!--font-size:larger;-->
+    President: <input id="president" type="text" value="1">
+    Congress: <input id="congress" type="text" value="1">
+    Governors: <input id="governors" type="text" value="1">
+    State Legislatures: <input id="statelegislatures" type="text" value="1">
+    <button type="button" id="update" onclick="updateTable();">Update</button> 
+    <button type="button" id="reset" onclick="resetTable();">Reset</button>
+    </form>
+  </div>
+  <div id="vis"></div>
+</div>
+
+
+<!-- <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>  v5-->
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script> <!--v0.3.-->
+<script type="text/javascript">
+//https://devdocs.io/d3~3/
+//https://devdocs.io/d3~4/
+
+// Global
+var originalData;
+
+d3.csv("statescore-matrix.csv", function(error, data) {
+  if (error) throw error;
+
+  data.forEach(function(el) {
+    el.governor = +el.governor;
+    el.president = +el.president;
+    el.statehouse = +el.statehouse;
+    el.statesenate = +el.statesenate;
+    el.sum = +el.sum;
+    el.ushouse = +el.ushouse;
+    el.ussenate = +el.ussenate;
+  })
+
+  //Deepcopy
+  //originalData = data.slice();
+  originalData = JSON.parse(JSON.stringify(data));
+  renderTable(originalData);
+});
+
+function resetTable() {
+  let ids = ['president', 'congress', 'governors', 'statelegislatures']
+  ids.forEach(function(id) {document.getElementById(id).value="1";})
+  renderTable(originalData);
+}
+
+function updateTable() {
+  let p = Number(document.getElementById("president").value);
+  let c = Number(document.getElementById("congress").value);
+  let g = Number(document.getElementById("governors").value);
+  let s = Number(document.getElementById("statelegislatures").value);
+
+  //Deepcopy
+  //let updateData = originalData.slice()
+  let updateData = JSON.parse(JSON.stringify(originalData));
+
+  updateData.forEach(function(el) {
+    el.president = el.president*p;
+    el.governor = el.governor*g;
+    el.ushouse = el.ushouse*c;
+    el.ussenate = el.ussenate*c;
+    el.statehouse = el.statehouse*s;
+    el.statesenate = el.statesenate*s;
+    el.sum = el.president + el.governor + el.ushouse + el.ussenate +
+      el.statehouse + el.statesenate;
+  });
+  renderTable(updateData);
+}
+
+function renderTable(data) {
+  d3.select('#table').remove(); //Remove table if it exists
+  var sortAscending = false;  //true
+  var table = d3.select('#vis')
+    .append('table')
+    .attr('id', 'table');
+  var titles = d3.keys(data[0]);
+  var headers = table.append('thead').append('tr')
+    .selectAll('th')
+    .data(titles).enter()
+    .append('th')
+    .text(function (d) {
+      return d;
+    })
+    .attr('class', function(d) {
+      // Add inital descending
+      if (d === 'sum') {
+        return 'des'; 
+      }
+    })
+    .on('click', function (d) {
+      headers.attr('class', 'header');
+      rows.sort(function(a, b) { return b[d] > a[d]; });
+      if (this.classname === 'des') {
+        this.className = '';
+      } else {
+        this.className = 'des';
+      }
+    });
+
+  var hundredsFmt = d3.format(".2f");
+
+  var sums = data.map(function(el) {return el.sum;});
+
+  // var colorScale = d3.scaleSequential(d3.interpolatePuBu)
+  //   .domain([0, 2])
+
+  //https://www.d3indepth.com/scales/
+  // var colorScale = d3.scale.linear()
+  //   .domain([0, d3.max(sums)])
+  //   .range(['white', 'steelblue']); //'purple', cornflowerblue
+
+  //https://github.com/d3/d3-3.x-api-reference/blob/master/Quantitative-Scales.md#linear_interpolate
+  // var colorScale = d3.scale.linear()  //.scaleLinear v4
+  //   .domain([0, d3.max(sums)])
+  //   .interpolate(d3.interpolatePuBu);  //.interpolater()
+
+  //var colorScale = d3.scaleSequential(d3.interpolatePuBu); //interpolateViridis
+  //http://using-d3js.com/04_05_sequential_scales.html
+  var colorScale = d3.scaleSequential()
+    .domain([0, d3.max(sums)])
+    .interpolator(d3.interpolatePuBu); //PuBu OrRd Blues Reds
+
+  
+  var rows = table.append('tbody').selectAll('tr')
+    .data(data).enter()
+    .append('tr');
+
+  rows.selectAll('td')
+    .data(function (d) {
+      return titles.map(function (k) {
+        return { 'value': d[k], 'name': k};
+      });
+    }).enter()
+    .append('td')
+    .attr('data-th', function (d) {
+      return d.name;
+    })
+    .style('background', function (d) {
+      //console.log(colorScale(d)); //&& (d.name !== 'sum')
+      if (typeof d.value === 'number') {
+        return colorScale(Number(d.value));
+      }
+      return '#fafafa';
+    })
+    .text(function (d) {
+      if (typeof d.value === 'number') {
+        return hundredsFmt(d.value);
+      }
+      return d.value;
+    });
+
+    //Sort by sum initially every time
+    rows.sort(function(a, b) { return b['sum'] > a['sum']; });
+    
+}
+
+  
+</script>
+</body>
+
+</html>
