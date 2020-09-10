@@ -258,7 +258,10 @@ function renderTable(data) {
     })
     .on('click', function (d) {
       headers.attr('class', 'header');
-      rows.sort(function(a, b) { return b[d] > a[d]; });
+      //rows.sort(function(a, b) { return b[d] > a[d]; });
+      //Actually should return number, not T/F
+      //rows.sort(function(a, b) { return b[d] - a[d]; });
+      rows.sort(function(a, b) { return d3.descending(a[d], b[d]);})
       if (this.classname === 'des') {
         this.className = '';
       } else {
