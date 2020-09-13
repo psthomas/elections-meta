@@ -227,12 +227,3 @@ if __name__ == '__main__':
 
     # CNalysis state legislature ratings
     get_cnalysis(today)
-
-
-
-
-
-
-
-
-
