@@ -17,7 +17,7 @@ AZ,7,Democrat,currently-safe-democrat
 AZ,8,Republican,currently-safe-republican
 AZ,9,Democrat,currently-safe-democrat
 AR,1,Republican,currently-safe-republican
-AR,2,Republican,republican-favored
+AR,2,Republican,lean-republican
 AR,3,Republican,currently-safe-republican
 AR,4,Republican,currently-safe-republican
 CA,1,Republican,currently-safe-republican
@@ -44,7 +44,7 @@ CA,21,Democrat,toss-up-tilt-democrat
 CA,22,Republican,currently-safe-republican
 CA,23,Republican,currently-safe-republican
 CA,24,Democrat,currently-safe-democrat
-CA,25,Republican,toss-up-tilt-democrat
+CA,25,Republican,pure-toss-up
 CA,26,Democrat,currently-safe-democrat
 CA,27,Democrat,currently-safe-democrat
 CA,28,Democrat,currently-safe-democrat
@@ -111,7 +111,7 @@ FL,22,Democrat,currently-safe-democrat
 FL,23,Democrat,currently-safe-democrat
 FL,24,Democrat,currently-safe-democrat
 FL,25,Republican,currently-safe-republican
-FL,26,Democrat,toss-up-tilt-democrat
+FL,26,Democrat,pure-toss-up
 FL,27,Democrat,currently-safe-democrat
 GA,1,Republican,currently-safe-republican
 GA,2,Democrat,currently-safe-democrat
@@ -164,7 +164,7 @@ IA,3,Democrat,toss-up-tilt-democrat
 IA,4,Republican,currently-safe-republican
 KS,1,Republican,currently-safe-republican
 KS,2,Republican,currently-safe-republican
-KS,3,Democrat,lean-democrat
+KS,3,Democrat,democrat-favored
 KS,4,Republican,currently-safe-republican
 KY,1,Republican,currently-safe-republican
 KY,2,Republican,currently-safe-republican
@@ -179,7 +179,7 @@ LA,4,Republican,currently-safe-republican
 LA,5,Republican,currently-safe-republican
 LA,6,Republican,currently-safe-republican
 ME,1,Democrat,currently-safe-democrat
-ME,2,Democrat,toss-up-tilt-democrat
+ME,2,Democrat,lean-democrat
 MD,1,Republican,currently-safe-republican
 MD,2,Democrat,currently-safe-democrat
 MD,3,Democrat,currently-safe-democrat
@@ -391,7 +391,7 @@ TX,28,Democrat,currently-safe-democrat
 TX,29,Democrat,currently-safe-democrat
 TX,30,Democrat,currently-safe-democrat
 TX,31,Republican,currently-safe-republican
-TX,32,Democrat,lean-democrat
+TX,32,Democrat,democrat-favored
 TX,33,Democrat,currently-safe-democrat
 TX,34,Democrat,currently-safe-democrat
 TX,35,Democrat,currently-safe-democrat
