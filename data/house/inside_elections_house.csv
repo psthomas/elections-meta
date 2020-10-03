@@ -12,7 +12,7 @@ AZ,2,Democrat,currently-safe-democrat
 AZ,3,Democrat,currently-safe-democrat
 AZ,4,Republican,currently-safe-republican
 AZ,5,Republican,currently-safe-republican
-AZ,6,Republican,lean-republican
+AZ,6,Republican,toss-up-tilt-republican
 AZ,7,Democrat,currently-safe-democrat
 AZ,8,Republican,currently-safe-republican
 AZ,9,Democrat,currently-safe-democrat
@@ -40,7 +40,7 @@ CA,17,Democrat,currently-safe-democrat
 CA,18,Democrat,currently-safe-democrat
 CA,19,Democrat,currently-safe-democrat
 CA,20,Democrat,currently-safe-democrat
-CA,21,Democrat,toss-up-tilt-democrat
+CA,21,Democrat,pure-toss-up
 CA,22,Republican,currently-safe-republican
 CA,23,Republican,currently-safe-republican
 CA,24,Democrat,currently-safe-democrat
@@ -75,7 +75,7 @@ CA,52,Democrat,currently-safe-democrat
 CA,53,Democrat,currently-safe-democrat
 CO,1,Democrat,currently-safe-democrat
 CO,2,Democrat,currently-safe-democrat
-CO,3,Republican,republican-favored
+CO,3,Republican,lean-republican
 CO,4,Republican,currently-safe-republican
 CO,5,Republican,currently-safe-republican
 CO,6,Democrat,currently-safe-democrat
@@ -153,7 +153,7 @@ IN,1,Democrat,currently-safe-democrat
 IN,2,Republican,currently-safe-republican
 IN,3,Republican,currently-safe-republican
 IN,4,Republican,currently-safe-republican
-IN,5,Republican,lean-republican
+IN,5,Republican,pure-toss-up
 IN,6,Republican,currently-safe-republican
 IN,7,Democrat,currently-safe-democrat
 IN,8,Republican,currently-safe-republican
@@ -199,7 +199,7 @@ MA,8,Democrat,currently-safe-democrat
 MA,9,Democrat,currently-safe-democrat
 MI,1,Republican,currently-safe-republican
 MI,2,Republican,currently-safe-republican
-MI,3,Independent,toss-up-tilt-republican
+MI,3,Independent,pure-toss-up
 MI,4,Republican,currently-safe-republican
 MI,5,Democrat,currently-safe-democrat
 MI,6,Republican,republican-favored
@@ -224,7 +224,7 @@ MS,2,Democrat,currently-safe-democrat
 MS,3,Republican,currently-safe-republican
 MS,4,Republican,currently-safe-republican
 MO,1,Democrat,currently-safe-democrat
-MO,2,Republican,lean-republican
+MO,2,Republican,toss-up-tilt-republican
 MO,3,Republican,currently-safe-republican
 MO,4,Republican,currently-safe-republican
 MO,5,Democrat,currently-safe-democrat
@@ -321,9 +321,9 @@ OK,5,Democrat,pure-toss-up
 OR,1,Democrat,currently-safe-democrat
 OR,2,Republican,currently-safe-republican
 OR,3,Democrat,currently-safe-democrat
-OR,4,Democrat,currently-safe-democrat
+OR,4,Democrat,democrat-favored
 OR,5,Democrat,currently-safe-democrat
-PA,1,Republican,toss-up-tilt-republican
+PA,1,Republican,lean-republican
 PA,2,Democrat,currently-safe-democrat
 PA,3,Democrat,currently-safe-democrat
 PA,4,Democrat,currently-safe-democrat
@@ -362,11 +362,11 @@ TN,8,Republican,currently-safe-republican
 TN,9,Democrat,currently-safe-democrat
 TX,1,Republican,currently-safe-republican
 TX,2,Republican,republican-favored
-TX,3,Republican,currently-safe-republican
+TX,3,Republican,republican-favored
 TX,4,Republican,currently-safe-republican
 TX,5,Republican,currently-safe-republican
 TX,6,Republican,republican-favored
-TX,7,Democrat,lean-democrat
+TX,7,Democrat,democrat-favored
 TX,8,Republican,currently-safe-republican
 TX,9,Democrat,currently-safe-democrat
 TX,10,Republican,republican-favored
@@ -405,7 +405,7 @@ VA,1,Republican,currently-safe-republican
 VA,2,Democrat,lean-democrat
 VA,3,Democrat,currently-safe-democrat
 VA,4,Democrat,currently-safe-democrat
-VA,5,Republican,republican-favored
+VA,5,Republican,lean-republican
 VA,6,Republican,currently-safe-republican
 VA,7,Democrat,toss-up-tilt-democrat
 VA,8,Democrat,currently-safe-democrat
@@ -427,7 +427,7 @@ WV,2,Republican,currently-safe-republican
 WV,3,Republican,currently-safe-republican
 WI,1,Republican,currently-safe-republican
 WI,2,Democrat,currently-safe-democrat
-WI,3,Democrat,currently-safe-democrat
+WI,3,Democrat,democrat-favored
 WI,4,Democrat,currently-safe-democrat
 WI,5,Republican,currently-safe-republican
 WI,6,Republican,currently-safe-republican
