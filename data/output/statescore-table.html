@@ -247,7 +247,8 @@ function renderTable(data) {
     });
 
     //Sort by sum initially every time
-    rows.sort(function(a, b) { return b['sum'] > a['sum']; });
+    //rows.sort(function(a, b) { return b['sum'] > a['sum']; }); //Won't work in chrome
+    rows.sort(function(a, b) { return d3.descending(a['sum'], b['sum']);})
     
 }
 </script>
