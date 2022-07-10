@@ -5,6 +5,7 @@ from io import BytesIO
 from zipfile import ZipFile
 import xml.etree.ElementTree as et
 import re
+import os
 
 import requests
 from bs4 import BeautifulSoup
@@ -121,6 +122,41 @@ def get_cnalysis(today):
     print('Accessed State Senates:', statesenate_url)
 
 
+# Working with fivethirtyeight (Senate, House, Governor) and cnalysis (state legislative) data
+# 538 has histograms and tipping point probs, so just need to process those.
+# cnalysis has point estimates of seat share, so just need to model national swing, combine it
+# with sampled state seat share using similar stdev to pres model (?).
+
+# So I need to use the _deluxe model, sum the R+D histograms in the senate and house_seat_distribution_2022.csv
+# files across the 5% central margin (maybe don't use KDE, just sum the nums?), then I need to pull the 
+# tipping point probabilities in senate_state_toplines_2022.csv (_deluxe), and house_district_toplines_2022.csv
+# (_deluxe) out, join these pr_close and pr_tip values to the overall power values calculated in model.py based
+# on state attributes, then multiply.
+
+# For govs, take the most recent gov_state_toplines_2022, fit normal distribution to the p90, p10 vote share (but
+# this has to be two party voteshare?), then just integrate it for the p_close. pr_tip = 1, so just join and multiply.
+# Oh, actually they have mean_netpartymargin, p90_netpartymargin, p10_netpartymargin. So I think this is net dem margin,
+# you just have to calculate pr_close from this? Yep, just fit a normal dist to that, mu=mean_netparty, sigma = 1/2 distance
+# between p10, p90? then integrate 5%. 
+
+def get_538(save_loc='.'):
+    five_urls = {
+        "house_dist": "https://projects.fivethirtyeight.com/2022-general-election-forecast-data/house_seat_distribution_2022.csv",
+        "house_toplines": "https://projects.fivethirtyeight.com/2022-general-election-forecast-data/house_district_toplines_2022.csv",
+        "senate_dist": "https://projects.fivethirtyeight.com/2022-general-election-forecast-data/senate_seat_distribution_2022.csv",
+        "senate_toplines": "https://projects.fivethirtyeight.com/2022-general-election-forecast-data/senate_state_toplines_2022.csv",
+        "governor_toplines": "https://projects.fivethirtyeight.com/2022-general-election-forecast-data/governor_state_toplines_2022.csv"
+    }
+    data = {}
+
+    for key, url in five_urls.items():
+        data[key] = pd.read_csv(url)
+        data[key].to_csv(os.path.join(save_loc, key + '.csv'))
+        print('Accessed:', url)
+    return data
+
+
+
 ###### Unused scrapers #########
 
 def get_politico(today):
@@ -213,17 +249,22 @@ def scrape_ballotpedia():
 
 
 if __name__ == '__main__':
-    today = datetime.date.today()
 
-    # Access economist presidential model output
-    get_economist(today)
+    # Move scraper behavior into notebooks, don't run as standalone script
+    # anymore. Relative data filepaths should still work from these functions 
+    # if run from within notebooks next to a data/ directory. 
 
-    # Get McCartan Senate model
-    get_mccartan(today)
+    # today = datetime.date.today()
 
-    # Inside Elections governor and House seat ratings
-    get_inside_elections_govs(today)
-    get_inside_elections_house(today)
+    # # Access economist presidential model output
+    # get_economist(today)
 
-    # CNalysis state legislature ratings
-    get_cnalysis(today)
+    # # Get McCartan Senate model
+    # get_mccartan(today)
+
+    # # Inside Elections governor and House seat ratings
+    # get_inside_elections_govs(today)
+    # get_inside_elections_house(today)
+
+    # # CNalysis state legislature ratings
+    # get_cnalysis(today)

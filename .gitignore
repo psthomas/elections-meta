@@ -1,9 +1,9 @@
 .DS_Store
 __pycache__
 .ipynb_checkpoints
-*data/output/*.png
+**/data/output/*.png
 *scraps.py
 *simulation_scraps.ipynb
-*data/archive/*
-!*data/archive/.gitkeep
+**/data/archive/*
+!**/data/archive/.gitkeep
 notes/*
