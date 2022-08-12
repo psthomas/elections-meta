@@ -1,4 +1,4 @@
-fips,state_abbr,state_name,pop_2018,electoral_votes_2016
+fips,state_abbr,state_name,population,electoral_votes
 01,AL,Alabama, 4887871, 9
 02,AK,Alaska, 737438, 3
 04,AZ,Arizona, 7171646, 11
