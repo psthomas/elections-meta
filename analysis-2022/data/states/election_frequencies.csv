@@ -1,0 +1,100 @@
+state,election_frequency,branch
+New Jersey,4.0,statesenate
+Louisiana,4.0,statesenate
+Mississippi,4.0,statesenate
+Virginia,4.0,statesenate
+Kansas,4.0,statesenate
+South Carolina,4.0,statesenate
+New Mexico,4.0,statesenate
+West Virginia,2.0,statesenate
+Washington,2.0,statesenate
+Vermont,2.0,statesenate
+Utah,2.0,statesenate
+Texas,2.0,statesenate
+Tennessee,2.0,statesenate
+South Dakota,2.0,statesenate
+Nebraska,2.0,statesenate
+Oklahoma,2.0,statesenate
+Ohio,2.0,statesenate
+North Dakota,2.0,statesenate
+North Carolina,2.0,statesenate
+New York,2.0,statesenate
+New Hampshire,2.0,statesenate
+Nevada,2.0,statesenate
+Oregon,2.0,statesenate
+Pennsylvania,2.0,statesenate
+Maryland,4.0,statesenate
+Maine,2.0,statesenate
+Massachusetts,2.0,statesenate
+Michigan,4.0,statesenate
+Kentucky,2.0,statesenate
+Iowa,2.0,statesenate
+Indiana,2.0,statesenate
+Minnesota,4.0,statesenate
+Missouri,2.0,statesenate
+Montana,2.0,statesenate
+Illinois,2.0,statesenate
+Idaho,2.0,statesenate
+Rhode Island,2.0,statesenate
+Hawaii,2.0,statesenate
+Florida,2.0,statesenate
+Delaware,2.0,statesenate
+Connecticut,2.0,statesenate
+Colorado,2.0,statesenate
+California,2.0,statesenate
+Arkansas,2.0,statesenate
+Arizona,2.0,statesenate
+Alaska,2.0,statesenate
+Alabama,4.0,statesenate
+Wisconsin,2.0,statesenate
+Georgia,2.0,statesenate
+Wyoming,2.0,statesenate
+Mississippi,4.0,statehouse
+Louisiana,4.0,statehouse
+New Jersey,2.0,statehouse
+Virginia,2.0,statehouse
+New Mexico,2.0,statehouse
+New Hampshire,2.0,statehouse
+Montana,2.0,statehouse
+Missouri,2.0,statehouse
+Minnesota,2.0,statehouse
+Nevada,2.0,statehouse
+New York,2.0,statehouse
+Ohio,2.0,statehouse
+North Dakota,2.0,statehouse
+Oklahoma,2.0,statehouse
+Oregon,2.0,statehouse
+Pennsylvania,2.0,statehouse
+South Dakota,2.0,statehouse
+Tennessee,2.0,statehouse
+Texas,2.0,statehouse
+Utah,2.0,statehouse
+Vermont,2.0,statehouse
+Washington,2.0,statehouse
+West Virginia,2.0,statehouse
+North Carolina,2.0,statehouse
+South Carolina,2.0,statehouse
+Delaware,2.0,statehouse
+Michigan,2.0,statehouse
+Rhode Island,2.0,statehouse
+Alabama,4.0,statehouse
+Alaska,2.0,statehouse
+Arizona,2.0,statehouse
+Arkansas,2.0,statehouse
+California,2.0,statehouse
+Colorado,2.0,statehouse
+Connecticut,2.0,statehouse
+Florida,2.0,statehouse
+Wisconsin,2.0,statehouse
+Georgia,2.0,statehouse
+Idaho,2.0,statehouse
+Illinois,2.0,statehouse
+Indiana,2.0,statehouse
+Iowa,2.0,statehouse
+Kansas,2.0,statehouse
+Kentucky,2.0,statehouse
+Maine,2.0,statehouse
+Maryland,4.0,statehouse
+Massachusetts,2.0,statehouse
+Hawaii,2.0,statehouse
+Wyoming,2.0,statehouse
