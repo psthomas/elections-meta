@@ -12,6 +12,15 @@ from bs4 import BeautifulSoup
 import numpy as np
 import pandas as pd
 
+#from election_meta import settings
+#import settings
+#from election_meta import settings
+try:
+    from election_meta import settings
+except ModuleNotFoundError:
+    pass
+
+
 ####### Current Scrapers ##########
 
 def get_economist(today):
@@ -122,24 +131,7 @@ def get_cnalysis(today):
     print('Accessed State Senates:', statesenate_url)
 
 
-# Working with fivethirtyeight (Senate, House, Governor) and cnalysis (state legislative) data
-# 538 has histograms and tipping point probs, so just need to process those.
-# cnalysis has point estimates of seat share, so just need to model national swing, combine it
-# with sampled state seat share using similar stdev to pres model (?).
-
-# So I need to use the _deluxe model, sum the R+D histograms in the senate and house_seat_distribution_2022.csv
-# files across the 5% central margin (maybe don't use KDE, just sum the nums?), then I need to pull the 
-# tipping point probabilities in senate_state_toplines_2022.csv (_deluxe), and house_district_toplines_2022.csv
-# (_deluxe) out, join these pr_close and pr_tip values to the overall power values calculated in model.py based
-# on state attributes, then multiply.
-
-# For govs, take the most recent gov_state_toplines_2022, fit normal distribution to the p90, p10 vote share (but
-# this has to be two party voteshare?), then just integrate it for the p_close. pr_tip = 1, so just join and multiply.
-# Oh, actually they have mean_netpartymargin, p90_netpartymargin, p10_netpartymargin. So I think this is net dem margin,
-# you just have to calculate pr_close from this? Yep, just fit a normal dist to that, mu=mean_netparty, sigma = 1/2 distance
-# between p10, p90? then integrate 5%. 
-
-def get_538(save_loc='.'):
+def get_538(save_loc, archive_loc):
     five_urls = {
         "house_dist": "https://projects.fivethirtyeight.com/2022-general-election-forecast-data/house_seat_distribution_2022.csv",
         "house_toplines": "https://projects.fivethirtyeight.com/2022-general-election-forecast-data/house_district_toplines_2022.csv",
@@ -150,11 +142,90 @@ def get_538(save_loc='.'):
     data = {}
 
     for key, url in five_urls.items():
-        data[key] = pd.read_csv(url)
-        data[key].to_csv(os.path.join(save_loc, key + '.csv'))
-        print('Accessed:', url)
+        # https://stackoverflow.com/questions/65460548
+        data[key] = pd.read_csv(url, low_memory=False)
+        data[key].to_csv(os.path.join(save_loc, key + '.csv'), index=False)
+        today = datetime.date.today()
+        data[key].to_csv(os.path.join(archive_loc, key + '_{0}.csv'.format(today)), index=False)
+        print('Accessed:', key)
     return data
 
+def get_cnalysis_2022(save_loc='', archive_loc=''):
+    # html = requests.get('https://projects.cnalysis.com/21-22/state-legislative/').content
+    # #soup = BeautifulSoup(html, 'html.parser')
+    # # For some reason id isn't identified by bs4 for this script
+    # # data = soup.find('script',  id = ' __NEXT_DATA__')
+    # #data = soup.find('script', {'type': 'application/json'})
+
+    state_houses = pd.read_csv(
+        'https://docs.google.com/spreadsheets/d/e/2PACX-1vSBwdz78YjgsG_QccV_WvPb55xRHzK07mfPnLowjcS9r_lRgcQZS3OHONRHE0PeVbZwlFVjoHMiJ2Ju/pub?gid=1367275984&single=true&output=csv'
+    )
+
+    state_senates = pd.read_csv(
+        'https://docs.google.com/spreadsheets/d/e/2PACX-1vSBwdz78YjgsG_QccV_WvPb55xRHzK07mfPnLowjcS9r_lRgcQZS3OHONRHE0PeVbZwlFVjoHMiJ2Ju/pub?gid=0&single=true&output=csv'
+    )
+    today = datetime.date.today()
+
+    state_houses.to_csv(os.path.join(save_loc, 'state_houses.csv'))
+    state_houses.to_csv(os.path.join(archive_loc, 'state_houses_{0}.csv'.format(today)), index=False)
+    state_senates.to_csv(os.path.join(save_loc, 'state_senates.csv'))
+    state_senates.to_csv(os.path.join(archive_loc, 'state_senates_{0}.csv'.format(today)), index=False)
+    data = {
+        'state_houses': state_houses,
+        'state_senates': state_senates
+    }
+    print('Accessed State Legislatures.')
+    return data
+
+def get_jacobson(save_loc='', archive_loc=''):
+    url = 'https://centerforpolitics.org/crystalball/articles/the-battle-for-the-state-legislatures/'
+    html = requests.get(url).content
+    soup = BeautifulSoup(html, 'html.parser')
+
+    state_results = {}
+    states = soup.find_all('strong')
+    states = states[1:-1] # Pop the ends off
+    states = [el.string.title() for el in states]
+    states.remove('Nebraska')
+    state_results['state'] = states
+    
+    ratings = soup.find_all('em')
+    ratings = ratings[2:-1] #Clip
+    # Two ratings per body
+    ratings = [el.string.split(': ')[1] for el in ratings]
+    senate_ratings = ratings[0::2]
+    house_ratings = ratings[1::2]
+    state_results['house'] = house_ratings
+    state_results['senate'] = senate_ratings
+    state_forecast = pd.DataFrame(state_results)
+    # Replace only works on substrings if regex=True
+    state_forecast = state_forecast.replace('.\(flip\)', '', regex=True)
+    state_forecast = state_forecast.melt(
+        id_vars='state',
+        value_vars=['house', 'senate'],
+        var_name='office',
+        value_name='forecast'
+    )
+    
+    today = datetime.date.today()
+    state_forecast.to_csv(os.path.join(save_loc, 'state_legislatures.csv'), index=False)
+    state_forecast.to_csv(os.path.join(archive_loc, 'state_legislatures_{0}.csv'.format(today)), index=False)
+    print('Accessed: ', url)
+    return state_forecast
+
+def get_followthemoney(api_key=settings.ftm_key, save_loc='', archive_loc=''):
+    '''Either pass an api key from your https://www.followthemoney.org account, or store it
+    in a local settings.py file. Keep your key out of version control whatever you do.'''
+    url = f'https://www.followthemoney.org/aaengine/aafetch.php?dt=1&y=2022&gro=s,y,c-r-ot&APIKey={api_key}&mode=csv'
+    state_funds = pd.read_csv(url)
+    today = datetime.date.today()
+    state_funds.to_csv(os.path.join(save_loc, 'state_funds.csv'), index=False)
+    state_funds.to_csv(os.path.join(archive_loc, 'state_funds_{0}.csv'.format(today)), index=False)
+    return state_funds
+
+    
+def get_opensecrets(api_key=settings.os_key, save_loc='', archive_loc=''):
+    pass
 
 
 ###### Unused scrapers #########
@@ -248,8 +319,7 @@ def scrape_ballotpedia():
     # /html/body/div[7]/div[2]/div/div/div[2]/div[4]/table[3]/tbody/tr[1]/td[1]
 
 
-if __name__ == '__main__':
-
+# if __name__ == '__main__':
     # Move scraper behavior into notebooks, don't run as standalone script
     # anymore. Relative data filepaths should still work from these functions 
     # if run from within notebooks next to a data/ directory. 

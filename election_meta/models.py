@@ -37,10 +37,9 @@ def normed_prob(a, bounds, interval=[0.475, 0.525]): #0.475,0.525 #0.49,0.51
     return kde.integrate_box_1d(interval[0], interval[1])
 
 
-def calculate_seat_power(state_metadata, stateleg_metadata):
+def calculate_seat_power(state_metadata):
     '''Creates a hierarchical power sharing model covering all federal and
-    state level elected offices.
-    '''
+    state level elected offices. 2020 version, not corrected by year.'''
 
     total_power = 100
     federal_power = 0.5*total_power
@@ -55,15 +54,66 @@ def calculate_seat_power(state_metadata, stateleg_metadata):
 
     # Calculate state government power values based on fraction of national population
     state_power = state_metadata.copy()
-    state_power['multiplier'] = state_power['pop_2018']/state_power['pop_2018'].sum()
+    state_power['multiplier'] = state_power['population']/state_power['population'].sum()
     state_power['governor_power'] = governor_power*state_power['multiplier']
     state_power['state_senate_power'] = state_senate_power*state_power['multiplier']
     state_power['state_house_power'] = state_house_power*state_power['multiplier']
-    state_power.drop(['electoral_votes_2016', 'pop_2018', 'multiplier'], axis='columns', inplace=True)
+    state_power.drop(['electoral_votes', 'population', 'multiplier'], axis='columns', inplace=True)
 
     return {'state_power': state_power, 'presidential_power': presidential_power,
         'senate_power': senate_power, 'house_power': house_power,
-        'governor_power': governor_power}  
+        'governor_power': governor_power}
+
+def calculate_year_adjusted_seatpower(state_metadata, state_election_frequency):
+    '''New for 2022. Adjusts the power for each legislative body/office by the
+    length of time it will be held. e.g. Senate is decided for 2 years, presidency
+    for 4. State legislative bodies are decided every 2-4 years, varies.'''
+
+    total_power = 100
+    federal_power = 0.5*total_power
+    presidential_power = 0.5*federal_power*4 # Decided every 4 years
+    senate_power = 0.25*federal_power*2 # Body decided every 2
+    house_power = 0.25*federal_power*2
+
+    states_power = 0.5*total_power
+    cumulative_governor_power = 0.5*states_power*4 # Decided every 4 years
+    cumulative_statesenate_power = 0.25*states_power
+    cumulative_statehouse_power = 0.25*states_power
+
+    # Calculate state government power values based on fraction of national population,
+    # and how often the state legislative bodies hold elections.
+    state_power = state_metadata.copy()
+    state_power['population_multiplier'] = state_power['population']/state_power['population'].sum()
+
+    governor_power = state_power.copy()
+    governor_power.eval(
+        'potential_power = @cumulative_governor_power*population_multiplier',
+        inplace=True
+    )
+
+    statehouse_power = state_power.copy()
+    statehouse_power = statehouse_power.merge(
+        state_election_frequency.query('branch == "statehouse"'), 
+        on='state'
+    )
+    statehouse_power.eval(
+        'potential_power = @cumulative_statehouse_power*population_multiplier*election_frequency',
+        inplace=True
+    )
+    
+    statesenate_power = state_power.copy()
+    statesenate_power = statesenate_power.merge(
+        state_election_frequency.query('branch == "statesenate"'), 
+        on='state'
+    )
+    statesenate_power.eval(
+        'potential_power = @cumulative_statesenate_power*population_multiplier*election_frequency', 
+        inplace=True
+    )
+
+    return {'statehouse_power': statehouse_power, 'statesenate_power': statehouse_power,
+        'governor_power': governor_power, 'presidential_power': presidential_power,
+        'ussenate_power': senate_power, 'ushouse_power': house_power}
 
 
 ## Presidential, processing economist output
@@ -348,10 +398,18 @@ def simulate_governors(n, state_uncertainty_sd, national_uncertainty_sd, govs):
     votes = []
 
     for i in range(n):
-        # Account for potential national swing
-        national_error = np.random.normal(0, national_uncertainty_sd)
+
+        if national_uncertainty_sd:
+            # Account for potential national swing
+            national_error = np.random.normal(0, national_uncertainty_sd)
+        else:
+            national_error = 0
         
         # Only need to sample from seat, adding in national swing
+        # state_uncertainty_sd can either be a constant, or an array in numpy call,
+        # so pass an array using 1/2 the governors sd or se?
+        # Maybe include an option to exclude the national swing if e.g. using 538 bounds
+        # which should include that already.
         sample = np.random.normal(govs['dem'], state_uncertainty_sd) + national_error
         sample = np.clip(sample, 0.0, 1.0)
         votes.append(sample)
@@ -402,8 +460,8 @@ def prep_statehouse_data(path, rating_categories, stateleg_metadata):
     return sh
 
 def simulate_statehouses(n, state_uncertainty_sd, national_uncertainty_sd, house_data):
-    '''Note: this simulates estected seat count,
-    not estected democratic margin by state'''
+    '''Note: this simulates expected seat count,
+    not expected democratic margin by state'''
     
     house_data = house_data.copy()
     seats = house_data['state']
@@ -411,6 +469,10 @@ def simulate_statehouses(n, state_uncertainty_sd, national_uncertainty_sd, house
     summary = []
     # Scale the uncertainty so it is in units of house seats
     house_data['scaled_sd'] = house_data['house_num']*state_uncertainty_sd
+    # 2022: Note, this isn't a great approach because e.g. you could have large
+    # polling uncertainty, zero competitive seats, and very low seat share uncertainty.
+    # Better approach is to just use uncertainty from actual longitudinal seat share 
+    # data. Not perfect, but better than this.
 
     for i in range(n):
         onesim = house_data[['state', 'house_num', 'dem', 'scaled_sd']].copy()
@@ -476,8 +538,8 @@ def prep_statesenate_data(path, rating_categories, stateleg_metadata):
     return ss
 
 def simulate_statesenates(n, state_uncertainty_sd, national_uncertainty_sd, senate_data):
-    '''Note: this simulates estected seat count,
-    not estected democratic margin by state.'''
+    '''Note: this simulates expected seat count,
+    not expected democratic margin by state.'''
     
     senate_data = senate_data.copy()
     states = senate_data['state']
@@ -551,8 +613,27 @@ def plot_histogram(sims, mean_outcome, midpoint, title, x_label, outcome=None, b
         plt.savefig(out, bbox_inches='tight') #bbox_inches='tight'
     return ax
 
+def plot_seatprob(x, y, mean_outcome, midpoint, title, x_label, y_label, outcome=None, bins=None, out=None):
+    fig, ax = plt.subplots(figsize=[6, 4])
 
-def seatplot(plot_df, x, y, title, x_label, figsize=[6, 11], xlim=[0.2, 0.8], outcome=None, out=None):
+    sns.lineplot(x=x, y=y, ci=None, ax=ax)
+    # Discrete bars are accurate, but jumbled
+    # sns.barplot(x=x, y=y, ci=None, ax=ax)
+    ax.axvline(mean_outcome, color='red', alpha=0.9)
+    ax.axvline(midpoint, color='gray')
+    if outcome:
+        ax.axvline(outcome, color='darkgreen')
+    ax.set_title(title)
+    ax.set_xlabel(x_label)
+    ax.set_ylabel(y_label)
+    ax.fill_between(x, y, alpha=0.2)
+    ax.set(ylim=(0, y.max()*1.05))
+    if out:
+        plt.savefig(out, bbox_inches='tight') #bbox_inches='tight'
+    return ax
+
+
+def seatplot(plot_df, x, y, title, x_label, midpoint=0.5, figsize=[6, 11], xlim=[0.2, 0.8], outcome=None, out=None):
     # https://matplotlib.org/3.1.1/gallery/statistics/errorbar_features.html
     # https://stackoverflow.com/questions/31081568
     fig, ax = plt.subplots(figsize=figsize)
@@ -572,7 +653,7 @@ def seatplot(plot_df, x, y, title, x_label, figsize=[6, 11], xlim=[0.2, 0.8], ou
         )
     plt.yticks(ticks=plot_df.index, labels=plot_df[y])
     ax.grid(alpha=0.6)
-    ax.axvline(0.5, color='gray', alpha=0.9)
+    ax.axvline(midpoint, color='gray', alpha=0.9)
     ax.set_xlabel(x_label)
     if xlim:
         ax.set_xlim(xlim[0], xlim[1])
