@@ -9,3 +9,4 @@ __pycache__
 !**/data/archive/.gitkeep
 notes/*
 election_meta/settings.py
+**/data/fivethirtyeight/house_toplines.csv
