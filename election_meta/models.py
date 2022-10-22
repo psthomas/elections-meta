@@ -720,3 +720,41 @@ def output_table(src, outpath, center=True):
     with open(outpath, 'w') as f:
         f.write(result)
 
+def output_interactive_table(table, datatable_def, outpath):
+    '''Outputs an interactive dataTable to be embedded as iframe.
+    Works with rendered html tables and a dataTable definition.
+    '''
+    html_template = '''
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <style>
+    body {font-family:sans-serif;font-size:12px;}
+    </style
+    </head>
+    <body>
+
+    <div>
+    ||table||
+    </div>
+
+    <script>
+     $(document).ready( function () {
+         $('table[id^=T_]').DataTable(||datatable_def||);
+     });
+    </script>
+
+    </body>
+    </html>
+    '''
+
+    table_html = html_template.replace("||table||", table)
+    table_html = table_html.replace("||datatable_def||", datatable_def)
+    
+    with open(outpath, 'w') as f:
+        f.write(table_html)
+

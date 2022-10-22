@@ -215,15 +215,51 @@ def get_jacobson(save_loc='', archive_loc=''):
 
 def get_followthemoney(api_key=settings.ftm_key, save_loc='', archive_loc=''):
     '''Either pass an api key from your https://www.followthemoney.org account, or store it
-    in a local settings.py file. Keep your key out of version control whatever you do.'''
+    in a local settings.py file. Keep your key out of version control.'''
     url = f'https://www.followthemoney.org/aaengine/aafetch.php?dt=1&y=2022&gro=s,y,c-r-ot&APIKey={api_key}&mode=csv'
     state_funds = pd.read_csv(url)
     today = datetime.date.today()
+    #funds_csv = requests.get(url).content
+    #Path(os.path.join(save_loc, 'state_funds_test.csv')).write_bytes(funds_csv)
+
     state_funds.to_csv(os.path.join(save_loc, 'state_funds.csv'), index=False)
     state_funds.to_csv(os.path.join(archive_loc, 'state_funds_{0}.csv'.format(today)), index=False)
     return state_funds
 
-    
+
+def get_fec(save_loc='', archive_loc=''):
+    fec_url = 'https://www.fec.gov/files/bulk-downloads/2022/weball22.zip'
+    fec_filepath = 'weball22.txt'
+
+    # https://stackoverflow.com/questions/5710867
+    resp = requests.get(fec_url)
+    fec_zip = ZipFile(BytesIO(resp.content))
+    fec_file = fec_zip.read(fec_filepath)
+
+    working_path = os.path.join(save_loc, 'federal_funds.csv')
+    Path(working_path).write_bytes(fec_file)
+
+    # https://www.fec.gov/campaign-finance-data/all-candidates-file-description/
+    columns = [
+        'CAND_ID', 'CAND_NAME', 'CAND_ICI', 'PTY_CD', 'CAND_PTY_AFFILIATION', 'TTL_RECEIPTS', 
+        'TRANS_FROM_AUTH', 'TTL_DISB', 'TRANS_TO_AUTH', 'COH_BOP', 'COH_COP', 'CAND_CONTRIB', 
+        'CAND_LOANS', 'OTHER_LOANS', 'CAND_LOAN_REPAY', 'OTHER_LOAN_REPAY', 'DEBTS_OWED_BY', 
+        'TTL_INDIV_CONTRIB', 'CAND_OFFICE_ST', 'CAND_OFFICE_DISTRICT', 'SPEC_ELECTION', 
+        'PRIM_ELECTION', 'RUN_ELECTION', 'GEN_ELECTION', 'GEN_ELECTION_PRECENT', 
+        'OTHER_POL_CMTE_CONTRIB', 'POL_PTY_CONTRIB', 'CVG_END_DT', 'INDIV_REFUNDS', 'CMTE_REFUNDS'
+    ]
+
+    # No header in file, so add one
+    # Read as object to avoid dtype coercion
+    fec_df = pd.read_csv(working_path, sep='|', header=None, names=columns, dtype='object')
+    fec_df.to_csv(working_path, index=False)
+
+    archive_path = os.path.join(archive_loc, 'federal_funds_{0}.csv'.format(datetime.date.today()))
+    fec_df.to_csv(archive_path, index=False)
+
+    return fec_df
+
+
 def get_opensecrets(api_key=settings.os_key, save_loc='', archive_loc=''):
     pass
 

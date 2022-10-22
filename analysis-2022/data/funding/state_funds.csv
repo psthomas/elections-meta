@@ -1,191 +1,209 @@
 request,Election_Jurisdiction:token,Election_Jurisdiction:id,Election_Jurisdiction,Election_Year:token,Election_Year:id,Election_Year,General_Office:token,General_Office:id,General_Office,#_of_Records,Total_$
-dt=1&y=2022&s=IL&y=2022&c-r-ot=G,s,IL,IL,y,2022,2022,c-r-ot,G,Gubernatorial,9221,216804079.52
-dt=1&y=2022&s=TX&y=2022&c-r-ot=G,s,TX,TX,y,2022,2022,c-r-ot,G,Gubernatorial,708939,180223983.64
-dt=1&y=2022&s=FL&y=2022&c-r-ot=G,s,FL,FL,y,2022,2022,c-r-ot,G,Gubernatorial,434806,171524447.44
-dt=1&y=2022&s=TX&y=2022&c-r-ot=H,s,TX,TX,y,2022,2022,c-r-ot,H,State House/Assembly,103700,72223493.81
-dt=1&y=2022&s=NY&y=2022&c-r-ot=G,s,NY,NY,y,2022,2022,c-r-ot,G,Gubernatorial,37264,70692656.55
-dt=1&y=2022&s=PA&y=2022&c-r-ot=G,s,PA,PA,y,2022,2022,c-r-ot,G,Gubernatorial,62468,69114393.42
-dt=1&y=2022&s=CA&y=2022&c-r-ot=H,s,CA,CA,y,2022,2022,c-r-ot,H,State House/Assembly,52277,63482617.38
-dt=1&y=2022&s=MI&y=2022&c-r-ot=G,s,MI,MI,y,2022,2022,c-r-ot,G,Gubernatorial,336043,55038551.72
-dt=1&y=2022&s=IL&y=2022&c-r-ot=H,s,IL,IL,y,2022,2022,c-r-ot,H,State House/Assembly,25982,51965416.14
-dt=1&y=2022&s=IL&y=2022&c-r-ot=S,s,IL,IL,y,2022,2022,c-r-ot,S,State Senate,21958,49526899.26
-dt=1&y=2022&s=TX&y=2022&c-r-ot=O,s,TX,TX,y,2022,2022,c-r-ot,O,Other Statewide,48223,48830635.12
-dt=1&y=2022&s=WI&y=2022&c-r-ot=G,s,WI,WI,y,2022,2022,c-r-ot,G,Gubernatorial,190394,41716931.84
-dt=1&y=2022&s=GA&y=2022&c-r-ot=G,s,GA,GA,y,2022,2022,c-r-ot,G,Gubernatorial,250851,37109346.63
-dt=1&y=2022&s=CA&y=2022&c-r-ot=O,s,CA,CA,y,2022,2022,c-r-ot,O,Other Statewide,21416,36813830.41
+dt=1&y=2022&s=IL&y=2022&c-r-ot=G,s,IL,IL,y,2022,2022,c-r-ot,G,Gubernatorial,11244,239890833.04
+dt=1&y=2022&s=FL&y=2022&c-r-ot=G,s,FL,FL,y,2022,2022,c-r-ot,G,Gubernatorial,655478,226189512.6
+dt=1&y=2022&s=TX&y=2022&c-r-ot=G,s,TX,TX,y,2022,2022,c-r-ot,G,Gubernatorial,1217266,207702242.9
+dt=1&y=2022&s=PA&y=2022&c-r-ot=G,s,PA,PA,y,2022,2022,c-r-ot,G,Gubernatorial,130726,98799675.36
+dt=1&y=2022&s=CA&y=2022&c-r-ot=H,s,CA,CA,y,2022,2022,c-r-ot,H,State House/Assembly,71431,95107295.68
+dt=1&y=2022&s=NY&y=2022&c-r-ot=G,s,NY,NY,y,2022,2022,c-r-ot,G,Gubernatorial,44558,82322696.93
+dt=1&y=2022&s=IL&y=2022&c-r-ot=H,s,IL,IL,y,2022,2022,c-r-ot,H,State House/Assembly,32716,76783570.98
+dt=1&y=2022&s=IL&y=2022&c-r-ot=S,s,IL,IL,y,2022,2022,c-r-ot,S,State Senate,26722,72751465.15
+dt=1&y=2022&s=TX&y=2022&c-r-ot=H,s,TX,TX,y,2022,2022,c-r-ot,H,State House/Assembly,103686,72220346.58
+dt=1&y=2022&s=GA&y=2022&c-r-ot=G,s,GA,GA,y,2022,2022,c-r-ot,G,Gubernatorial,444680,57826783.51
+dt=1&y=2022&s=WI&y=2022&c-r-ot=G,s,WI,WI,y,2022,2022,c-r-ot,G,Gubernatorial,241873,56765824.78
+dt=1&y=2022&s=MI&y=2022&c-r-ot=G,s,MI,MI,y,2022,2022,c-r-ot,G,Gubernatorial,370232,56615238.36
+dt=1&y=2022&s=TX&y=2022&c-r-ot=O,s,TX,TX,y,2022,2022,c-r-ot,O,Other Statewide,48210,48822323.97
+dt=1&y=2022&s=CA&y=2022&c-r-ot=O,s,CA,CA,y,2022,2022,c-r-ot,O,Other Statewide,25462,44102831.5
+dt=1&y=2022&s=CA&y=2022&c-r-ot=S,s,CA,CA,y,2022,2022,c-r-ot,S,State Senate,26691,38495008.06
+dt=1&y=2022&s=OR&y=2022&c-r-ot=G,s,OR,OR,y,2022,2022,c-r-ot,G,Gubernatorial,16853,38409595.14
+dt=1&y=2022&s=AZ&y=2022&c-r-ot=G,s,AZ,AZ,y,2022,2022,c-r-ot,G,Gubernatorial,145173,35518017.21
+dt=1&y=2022&s=FL&y=2022&c-r-ot=H,s,FL,FL,y,2022,2022,c-r-ot,H,State House/Assembly,79468,34427938.47
 dt=1&y=2022&s=TX&y=2022&c-r-ot=S,s,TX,TX,y,2022,2022,c-r-ot,S,State Senate,29361,34279728.64
-dt=1&y=2022&s=MD&y=2022&c-r-ot=G,s,MD,MD,y,2022,2022,c-r-ot,G,Gubernatorial,56973,29901041.45
-dt=1&y=2022&s=FL&y=2022&c-r-ot=H,s,FL,FL,y,2022,2022,c-r-ot,H,State House/Assembly,62152,25563523.36
-dt=1&y=2022&s=PA&y=2022&c-r-ot=H,s,PA,PA,y,2022,2022,c-r-ot,H,State House/Assembly,39003,25397784.98
-dt=1&y=2022&s=CA&y=2022&c-r-ot=S,s,CA,CA,y,2022,2022,c-r-ot,S,State Senate,19992,25008496.99
-dt=1&y=2022&s=NE&y=2022&c-r-ot=G,s,NE,NE,y,2022,2022,c-r-ot,G,Gubernatorial,2722,24863049.66
-dt=1&y=2022&s=NV&y=2022&c-r-ot=G,s,NV,NV,y,2022,2022,c-r-ot,G,Gubernatorial,13270,24295341.83
-dt=1&y=2022&s=AZ&y=2022&c-r-ot=G,s,AZ,AZ,y,2022,2022,c-r-ot,G,Gubernatorial,97145,23772206.74
-dt=1&y=2022&s=AL&y=2022&c-r-ot=G,s,AL,AL,y,2022,2022,c-r-ot,G,Gubernatorial,4406,22686299.42
-dt=1&y=2022&s=CA&y=2022&c-r-ot=G,s,CA,CA,y,2022,2022,c-r-ot,G,Gubernatorial,21530,22551851.34
-dt=1&y=2022&s=AR&y=2022&c-r-ot=G,s,AR,AR,y,2022,2022,c-r-ot,G,Gubernatorial,110392,19942537.27
-dt=1&y=2022&s=OH&y=2022&c-r-ot=G,s,OH,OH,y,2022,2022,c-r-ot,G,Gubernatorial,36646,18601752.46
-dt=1&y=2022&s=MD&y=2022&c-r-ot=H,s,MD,MD,y,2022,2022,c-r-ot,H,State House/Assembly,69540,18160895.52
-dt=1&y=2022&s=OR&y=2022&c-r-ot=G,s,OR,OR,y,2022,2022,c-r-ot,G,Gubernatorial,10649,16319562.93
-dt=1&y=2022&s=IL&y=2022&c-r-ot=O,s,IL,IL,y,2022,2022,c-r-ot,O,Other Statewide,6591,15875811.1
-dt=1&y=2022&s=NM&y=2022&c-r-ot=G,s,NM,NM,y,2022,2022,c-r-ot,G,Gubernatorial,50521,15819175.8
-dt=1&y=2022&s=MD&y=2022&c-r-ot=S,s,MD,MD,y,2022,2022,c-r-ot,S,State Senate,42054,14518386.76
-dt=1&y=2022&s=AL&y=2022&c-r-ot=H,s,AL,AL,y,2022,2022,c-r-ot,H,State House/Assembly,17046,14276354.66
-dt=1&y=2022&s=PA&y=2022&c-r-ot=S,s,PA,PA,y,2022,2022,c-r-ot,S,State Senate,16467,13785859.25
-dt=1&y=2022&s=AL&y=2022&c-r-ot=S,s,AL,AL,y,2022,2022,c-r-ot,S,State Senate,7468,13028601.52
+dt=1&y=2022&s=MD&y=2022&c-r-ot=G,s,MD,MD,y,2022,2022,c-r-ot,G,Gubernatorial,67464,32898778.09
+dt=1&y=2022&s=OH&y=2022&c-r-ot=G,s,OH,OH,y,2022,2022,c-r-ot,G,Gubernatorial,73793,31846925.9
+dt=1&y=2022&s=CA&y=2022&c-r-ot=G,s,CA,CA,y,2022,2022,c-r-ot,G,Gubernatorial,34635,30220852.53
+dt=1&y=2022&s=NV&y=2022&c-r-ot=G,s,NV,NV,y,2022,2022,c-r-ot,G,Gubernatorial,16454,28897867.58
+dt=1&y=2022&s=AR&y=2022&c-r-ot=G,s,AR,AR,y,2022,2022,c-r-ot,G,Gubernatorial,150338,27016565.85
+dt=1&y=2022&s=PA&y=2022&c-r-ot=H,s,PA,PA,y,2022,2022,c-r-ot,H,State House/Assembly,40453,26355879.23
+dt=1&y=2022&s=NY&y=2022&c-r-ot=S,s,NY,NY,y,2022,2022,c-r-ot,S,State Senate,57957,24597839.35
+dt=1&y=2022&s=NM&y=2022&c-r-ot=G,s,NM,NM,y,2022,2022,c-r-ot,G,Gubernatorial,73839,23916439.6
+dt=1&y=2022&s=AL&y=2022&c-r-ot=G,s,AL,AL,y,2022,2022,c-r-ot,G,Gubernatorial,4677,23727519.91
+dt=1&y=2022&s=IL&y=2022&c-r-ot=O,s,IL,IL,y,2022,2022,c-r-ot,O,Other Statewide,7823,22880657.88
+dt=1&y=2022&s=NY&y=2022&c-r-ot=H,s,NY,NY,y,2022,2022,c-r-ot,H,State House/Assembly,67061,20163753.68
+dt=1&y=2022&s=MD&y=2022&c-r-ot=H,s,MD,MD,y,2022,2022,c-r-ot,H,State House/Assembly,73370,19247835.24
+dt=1&y=2022&s=MA&y=2022&c-r-ot=O,s,MA,MA,y,2022,2022,c-r-ot,O,Other Statewide,38442,18874678.96
+dt=1&y=2022&s=CT&y=2022&c-r-ot=G,s,CT,CT,y,2022,2022,c-r-ot,G,Gubernatorial,5342,18176697.03
+dt=1&y=2022&s=AL&y=2022&c-r-ot=H,s,AL,AL,y,2022,2022,c-r-ot,H,State House/Assembly,20521,16558370.53
+dt=1&y=2022&s=MD&y=2022&c-r-ot=S,s,MD,MD,y,2022,2022,c-r-ot,S,State Senate,44213,15712895.68
+dt=1&y=2022&s=CO&y=2022&c-r-ot=G,s,CO,CO,y,2022,2022,c-r-ot,G,Gubernatorial,36251,15475756.89
+dt=1&y=2022&s=WA&y=2022&c-r-ot=H,s,WA,WA,y,2022,2022,c-r-ot,H,State House/Assembly,46457,15095777.02
+dt=1&y=2022&s=RI&y=2022&c-r-ot=G,s,RI,RI,y,2022,2022,c-r-ot,G,Gubernatorial,26845,14887450.01
+dt=1&y=2022&s=AL&y=2022&c-r-ot=S,s,AL,AL,y,2022,2022,c-r-ot,S,State Senate,8986,14874359.63
+dt=1&y=2022&s=OH&y=2022&c-r-ot=H,s,OH,OH,y,2022,2022,c-r-ot,H,State House/Assembly,38321,14862684.94
+dt=1&y=2022&s=MA&y=2022&c-r-ot=G,s,MA,MA,y,2022,2022,c-r-ot,G,Gubernatorial,53432,14692884.09
+dt=1&y=2022&s=FL&y=2022&c-r-ot=S,s,FL,FL,y,2022,2022,c-r-ot,S,State Senate,25064,14449616.8
+dt=1&y=2022&s=PA&y=2022&c-r-ot=S,s,PA,PA,y,2022,2022,c-r-ot,S,State Senate,17442,14449330.17
+dt=1&y=2022&s=AZ&y=2022&c-r-ot=O,s,AZ,AZ,y,2022,2022,c-r-ot,O,Other Statewide,47908,14437013.8
+dt=1&y=2022&s=MI&y=2022&c-r-ot=H,s,MI,MI,y,2022,2022,c-r-ot,H,State House/Assembly,67289,14246521.7
+dt=1&y=2022&s=OH&y=2022&c-r-ot=O,s,OH,OH,y,2022,2022,c-r-ot,O,Other Statewide,19524,13496260.27
+dt=1&y=2022&s=MI&y=2022&c-r-ot=S,s,MI,MI,y,2022,2022,c-r-ot,S,State Senate,71006,13076314.73
+dt=1&y=2022&s=HI&y=2022&c-r-ot=G,s,HI,HI,y,2022,2022,c-r-ot,G,Gubernatorial,8907,12766728.21
 dt=1&y=2022&s=NC&y=2022&c-r-ot=H,s,NC,NC,y,2022,2022,c-r-ot,H,State House/Assembly,31164,12689897.99
-dt=1&y=2022&s=MA&y=2022&c-r-ot=G,s,MA,MA,y,2022,2022,c-r-ot,G,Gubernatorial,42240,12528305.1
 dt=1&y=2022&s=NC&y=2022&c-r-ot=S,s,NC,NC,y,2022,2022,c-r-ot,S,State Senate,27211,12491233.33
-dt=1&y=2022&s=MI&y=2022&c-r-ot=H,s,MI,MI,y,2022,2022,c-r-ot,H,State House/Assembly,57938,12282316.87
-dt=1&y=2022&s=NY&y=2022&c-r-ot=H,s,NY,NY,y,2022,2022,c-r-ot,H,State House/Assembly,46463,12160187.99
-dt=1&y=2022&s=CT&y=2022&c-r-ot=G,s,CT,CT,y,2022,2022,c-r-ot,G,Gubernatorial,1688,11848991.12
-dt=1&y=2022&s=MI&y=2022&c-r-ot=S,s,MI,MI,y,2022,2022,c-r-ot,S,State Senate,62864,11201146.06
-dt=1&y=2022&s=AZ&y=2022&c-r-ot=O,s,AZ,AZ,y,2022,2022,c-r-ot,O,Other Statewide,32308,11169172.36
-dt=1&y=2022&s=NY&y=2022&c-r-ot=S,s,NY,NY,y,2022,2022,c-r-ot,S,State Senate,21461,11162866.07
-dt=1&y=2022&s=GA&y=2022&c-r-ot=O,s,GA,GA,y,2022,2022,c-r-ot,O,Other Statewide,14503,10951003.63
+dt=1&y=2022&s=GA&y=2022&c-r-ot=O,s,GA,GA,y,2022,2022,c-r-ot,O,Other Statewide,19371,12075292.12
+dt=1&y=2022&s=CO&y=2022&c-r-ot=O,s,CO,CO,y,2022,2022,c-r-ot,O,Other Statewide,98540,11591759.2
+dt=1&y=2022&s=MI&y=2022&c-r-ot=O,s,MI,MI,y,2022,2022,c-r-ot,O,Other Statewide,90502,11412424.64
+dt=1&y=2022&s=MA&y=2022&c-r-ot=H,s,MA,MA,y,2022,2022,c-r-ot,H,State House/Assembly,57955,11393219.3
+dt=1&y=2022&s=NM&y=2022&c-r-ot=H,s,NM,NM,y,2022,2022,c-r-ot,H,State House/Assembly,23671,11220955.12
+dt=1&y=2022&s=MD&y=2022&c-r-ot=O,s,MD,MD,y,2022,2022,c-r-ot,O,Other Statewide,17724,11219976.51
+dt=1&y=2022&s=OK&y=2022&c-r-ot=G,s,OK,OK,y,2022,2022,c-r-ot,G,Gubernatorial,26276,11044090.39
+dt=1&y=2022&s=DC&y=2022&c-r-ot=C,s,DC,DC,y,2022,2022,c-r-ot,C,Local Elections,25049,10790434.9
+dt=1&y=2022&s=KY&y=2022&c-r-ot=H,s,KY,KY,y,2022,2022,c-r-ot,H,State House/Assembly,20740,10627632.49
 dt=1&y=2022&s=SD&y=2022&c-r-ot=G,s,SD,SD,y,2022,2022,c-r-ot,G,Gubernatorial,26823,10465953.0
-dt=1&y=2022&s=FL&y=2022&c-r-ot=S,s,FL,FL,y,2022,2022,c-r-ot,S,State Senate,17352,10209469.79
-dt=1&y=2022&s=OK&y=2022&c-r-ot=G,s,OK,OK,y,2022,2022,c-r-ot,G,Gubernatorial,21721,9727063.22
-dt=1&y=2022&s=MD&y=2022&c-r-ot=O,s,MD,MD,y,2022,2022,c-r-ot,O,Other Statewide,15984,9530381.55
-dt=1&y=2022&s=MA&y=2022&c-r-ot=H,s,MA,MA,y,2022,2022,c-r-ot,H,State House/Assembly,45956,9250486.59
-dt=1&y=2022&s=OK&y=2022&c-r-ot=H,s,OK,OK,y,2022,2022,c-r-ot,H,State House/Assembly,14082,8800886.95
-dt=1&y=2022&s=OH&y=2022&c-r-ot=O,s,OH,OH,y,2022,2022,c-r-ot,O,Other Statewide,9328,8587667.74
-dt=1&y=2022&s=IA&y=2022&c-r-ot=G,s,IA,IA,y,2022,2022,c-r-ot,G,Gubernatorial,32952,8368857.86
+dt=1&y=2022&s=OK&y=2022&c-r-ot=H,s,OK,OK,y,2022,2022,c-r-ot,H,State House/Assembly,17228,10151310.04
+dt=1&y=2022&s=NE&y=2022&c-r-ot=G,s,NE,NE,y,2022,2022,c-r-ot,G,Gubernatorial,1820,9994181.32
+dt=1&y=2022&s=NV&y=2022&c-r-ot=O,s,NV,NV,y,2022,2022,c-r-ot,O,Other Statewide,13268,9891482.42
+dt=1&y=2022&s=IA&y=2022&c-r-ot=G,s,IA,IA,y,2022,2022,c-r-ot,G,Gubernatorial,34805,9158490.68
+dt=1&y=2022&s=OK&y=2022&c-r-ot=O,s,OK,OK,y,2022,2022,c-r-ot,O,Other Statewide,9251,9146806.18
+dt=1&y=2022&s=MN&y=2022&c-r-ot=G,s,MN,MN,y,2022,2022,c-r-ot,G,Gubernatorial,22074,8949603.88
+dt=1&y=2022&s=FL&y=2022&c-r-ot=O,s,FL,FL,y,2022,2022,c-r-ot,O,Other Statewide,12583,8853906.7
+dt=1&y=2022&s=NY&y=2022&c-r-ot=O,s,NY,NY,y,2022,2022,c-r-ot,O,Other Statewide,20606,8686086.4
+dt=1&y=2022&s=OR&y=2022&c-r-ot=H,s,OR,OR,y,2022,2022,c-r-ot,H,State House/Assembly,12102,8218670.73
 dt=1&y=2022&s=SC&y=2022&c-r-ot=G,s,SC,SC,y,2022,2022,c-r-ot,G,Gubernatorial,47590,8210279.16
-dt=1&y=2022&s=CO&y=2022&c-r-ot=G,s,CO,CO,y,2022,2022,c-r-ot,G,Gubernatorial,23772,7986739.81
-dt=1&y=2022&s=MA&y=2022&c-r-ot=O,s,MA,MA,y,2022,2022,c-r-ot,O,Other Statewide,28249,7985136.62
-dt=1&y=2022&s=CO&y=2022&c-r-ot=O,s,CO,CO,y,2022,2022,c-r-ot,O,Other Statewide,54200,7923441.92
-dt=1&y=2022&s=OK&y=2022&c-r-ot=O,s,OK,OK,y,2022,2022,c-r-ot,O,Other Statewide,7385,7866872.24
-dt=1&y=2022&s=IN&y=2022&c-r-ot=H,s,IN,IN,y,2022,2022,c-r-ot,H,State House/Assembly,10709,7673761.46
-dt=1&y=2022&s=MN&y=2022&c-r-ot=G,s,MN,MN,y,2022,2022,c-r-ot,G,Gubernatorial,15158,7662407.42
-dt=1&y=2022&s=NV&y=2022&c-r-ot=O,s,NV,NV,y,2022,2022,c-r-ot,O,Other Statewide,6399,7457150.09
-dt=1&y=2022&s=NM&y=2022&c-r-ot=H,s,NM,NM,y,2022,2022,c-r-ot,H,State House/Assembly,14329,7090699.96
-dt=1&y=2022&s=NY&y=2022&c-r-ot=O,s,NY,NY,y,2022,2022,c-r-ot,O,Other Statewide,11324,6899268.03
-dt=1&y=2022&s=SC&y=2022&c-r-ot=H,s,SC,SC,y,2022,2022,c-r-ot,H,State House/Assembly,15351,6382097.05
-dt=1&y=2022&s=FL&y=2022&c-r-ot=O,s,FL,FL,y,2022,2022,c-r-ot,O,Other Statewide,8823,6297319.7
-dt=1&y=2022&s=MA&y=2022&c-r-ot=S,s,MA,MA,y,2022,2022,c-r-ot,S,State Senate,26359,5993848.36
-dt=1&y=2022&s=IN&y=2022&c-r-ot=S,s,IN,IN,y,2022,2022,c-r-ot,S,State Senate,8608,5801242.52
-dt=1&y=2022&s=TN&y=2022&c-r-ot=G,s,TN,TN,y,2022,2022,c-r-ot,G,Gubernatorial,3157,5718771.32
-dt=1&y=2022&s=KY&y=2022&c-r-ot=H,s,KY,KY,y,2022,2022,c-r-ot,H,State House/Assembly,13832,5597148.23
-dt=1&y=2022&s=AK&y=2022&c-r-ot=G,s,AK,AK,y,2022,2022,c-r-ot,G,Gubernatorial,11715,5363835.24
-dt=1&y=2022&s=ID&y=2022&c-r-ot=G,s,ID,ID,y,2022,2022,c-r-ot,G,Gubernatorial,15261,5331713.28
-dt=1&y=2022&s=MI&y=2022&c-r-ot=O,s,MI,MI,y,2022,2022,c-r-ot,O,Other Statewide,27624,5144831.08
-dt=1&y=2022&s=AZ&y=2022&c-r-ot=S,s,AZ,AZ,y,2022,2022,c-r-ot,S,State Senate,69231,5031674.16
-dt=1&y=2022&s=AL&y=2022&c-r-ot=O,s,AL,AL,y,2022,2022,c-r-ot,O,Other Statewide,3749,4920052.69
-dt=1&y=2022&s=OR&y=2022&c-r-ot=H,s,OR,OR,y,2022,2022,c-r-ot,H,State House/Assembly,7886,4901174.7
-dt=1&y=2022&s=IA&y=2022&c-r-ot=S,s,IA,IA,y,2022,2022,c-r-ot,S,State Senate,18080,4859991.09
-dt=1&y=2022&s=ME&y=2022&c-r-ot=G,s,ME,ME,y,2022,2022,c-r-ot,G,Gubernatorial,29079,4752485.82
-dt=1&y=2022&s=NM&y=2022&c-r-ot=O,s,NM,NM,y,2022,2022,c-r-ot,O,Other Statewide,11335,4735389.19
-dt=1&y=2022&s=AR&y=2022&c-r-ot=H,s,AR,AR,y,2022,2022,c-r-ot,H,State House/Assembly,8973,4644288.08
-dt=1&y=2022&s=KS&y=2022&c-r-ot=G,s,KS,KS,y,2022,2022,c-r-ot,G,Gubernatorial,25173,4582785.49
-dt=1&y=2022&s=WI&y=2022&c-r-ot=H,s,WI,WI,y,2022,2022,c-r-ot,H,State House/Assembly,22242,4410092.57
-dt=1&y=2022&s=WI&y=2022&c-r-ot=O,s,WI,WI,y,2022,2022,c-r-ot,O,Other Statewide,17854,4304831.77
-dt=1&y=2022&s=OK&y=2022&c-r-ot=S,s,OK,OK,y,2022,2022,c-r-ot,S,State Senate,8937,4299937.31
-dt=1&y=2022&s=AR&y=2022&c-r-ot=S,s,AR,AR,y,2022,2022,c-r-ot,S,State Senate,5384,4093493.24
-dt=1&y=2022&s=IA&y=2022&c-r-ot=H,s,IA,IA,y,2022,2022,c-r-ot,H,State House/Assembly,17934,3908253.1
-dt=1&y=2022&s=AL&y=2022&c-r-ot=J,s,AL,AL,y,2022,2022,c-r-ot,J,State Supreme Court,1093,3870872.42
-dt=1&y=2022&s=OR&y=2022&c-r-ot=S,s,OR,OR,y,2022,2022,c-r-ot,S,State Senate,4530,3802468.31
-dt=1&y=2022&s=TN&y=2022&c-r-ot=H,s,TN,TN,y,2022,2022,c-r-ot,H,State House/Assembly,5101,3750266.2
-dt=1&y=2022&s=AR&y=2022&c-r-ot=O,s,AR,AR,y,2022,2022,c-r-ot,O,Other Statewide,6784,3630239.1
-dt=1&y=2022&s=NV&y=2022&c-r-ot=H,s,NV,NV,y,2022,2022,c-r-ot,H,State House/Assembly,2868,3549164.8
-dt=1&y=2022&s=CO&y=2022&c-r-ot=H,s,CO,CO,y,2022,2022,c-r-ot,H,State House/Assembly,20806,3359251.95
-dt=1&y=2022&s=TN&y=2022&c-r-ot=S,s,TN,TN,y,2022,2022,c-r-ot,S,State Senate,3274,3164358.72
-dt=1&y=2022&s=WI&y=2022&c-r-ot=S,s,WI,WI,y,2022,2022,c-r-ot,S,State Senate,13654,3137896.06
-dt=1&y=2022&s=NE&y=2022&c-r-ot=S,s,NE,NE,y,2022,2022,c-r-ot,S,State Senate,4302,3099569.48
-dt=1&y=2022&s=IL&y=2022&c-r-ot=J,s,IL,IL,y,2022,2022,c-r-ot,J,State Supreme Court,1858,2999005.92
-dt=1&y=2022&s=IA&y=2022&c-r-ot=O,s,IA,IA,y,2022,2022,c-r-ot,O,Other Statewide,10126,2881742.63
-dt=1&y=2022&s=AZ&y=2022&c-r-ot=H,s,AZ,AZ,y,2022,2022,c-r-ot,H,State House/Assembly,10611,2821949.3
-dt=1&y=2022&s=WA&y=2022&c-r-ot=H,s,WA,WA,y,2022,2022,c-r-ot,H,State House/Assembly,6738,2783100.7
+dt=1&y=2022&s=MO&y=2022&c-r-ot=H,s,MO,MO,y,2022,2022,c-r-ot,H,State House/Assembly,30926,7923588.98
+dt=1&y=2022&s=IN&y=2022&c-r-ot=H,s,IN,IN,y,2022,2022,c-r-ot,H,State House/Assembly,10815,7759903.58
+dt=1&y=2022&s=AZ&y=2022&c-r-ot=S,s,AZ,AZ,y,2022,2022,c-r-ot,S,State Senate,88306,7551088.9
+dt=1&y=2022&s=MO&y=2022&c-r-ot=S,s,MO,MO,y,2022,2022,c-r-ot,S,State Senate,9245,7323562.98
+dt=1&y=2022&s=TN&y=2022&c-r-ot=H,s,TN,TN,y,2022,2022,c-r-ot,H,State House/Assembly,9300,7217158.18
+dt=1&y=2022&s=MA&y=2022&c-r-ot=S,s,MA,MA,y,2022,2022,c-r-ot,S,State Senate,32373,7166575.8
+dt=1&y=2022&s=CO&y=2022&c-r-ot=H,s,CO,CO,y,2022,2022,c-r-ot,H,State House/Assembly,38857,7147632.31
+dt=1&y=2022&s=WA&y=2022&c-r-ot=S,s,WA,WA,y,2022,2022,c-r-ot,S,State Senate,23066,7134160.19
+dt=1&y=2022&s=ME&y=2022&c-r-ot=G,s,ME,ME,y,2022,2022,c-r-ot,G,Gubernatorial,44112,7132888.72
+dt=1&y=2022&s=AK&y=2022&c-r-ot=G,s,AK,AK,y,2022,2022,c-r-ot,G,Gubernatorial,15312,7085119.54
+dt=1&y=2022&s=KS&y=2022&c-r-ot=G,s,KS,KS,y,2022,2022,c-r-ot,G,Gubernatorial,39784,6744816.22
+dt=1&y=2022&s=WI&y=2022&c-r-ot=H,s,WI,WI,y,2022,2022,c-r-ot,H,State House/Assembly,33548,6500374.06
+dt=1&y=2022&s=SC&y=2022&c-r-ot=H,s,SC,SC,y,2022,2022,c-r-ot,H,State House/Assembly,15354,6385097.05
+dt=1&y=2022&s=AR&y=2022&c-r-ot=H,s,AR,AR,y,2022,2022,c-r-ot,H,State House/Assembly,13380,6295065.41
+dt=1&y=2022&s=NM&y=2022&c-r-ot=O,s,NM,NM,y,2022,2022,c-r-ot,O,Other Statewide,16341,6273225.45
+dt=1&y=2022&s=IL&y=2022&c-r-ot=J,s,IL,IL,y,2022,2022,c-r-ot,J,State Supreme Court,2518,6262460.75
+dt=1&y=2022&s=TN&y=2022&c-r-ot=G,s,TN,TN,y,2022,2022,c-r-ot,G,Gubernatorial,4041,6053592.01
+dt=1&y=2022&s=AZ&y=2022&c-r-ot=H,s,AZ,AZ,y,2022,2022,c-r-ot,H,State House/Assembly,24897,5846761.28
+dt=1&y=2022&s=IN&y=2022&c-r-ot=S,s,IN,IN,y,2022,2022,c-r-ot,S,State Senate,8696,5816344.83
+dt=1&y=2022&s=OH&y=2022&c-r-ot=S,s,OH,OH,y,2022,2022,c-r-ot,S,State Senate,10713,5811002.16
+dt=1&y=2022&s=NV&y=2022&c-r-ot=H,s,NV,NV,y,2022,2022,c-r-ot,H,State House/Assembly,5841,5802088.04
+dt=1&y=2022&s=OH&y=2022&c-r-ot=J,s,OH,OH,y,2022,2022,c-r-ot,J,State Supreme Court,20507,5721536.67
+dt=1&y=2022&s=ID&y=2022&c-r-ot=G,s,ID,ID,y,2022,2022,c-r-ot,G,Gubernatorial,17894,5694405.12
+dt=1&y=2022&s=OR&y=2022&c-r-ot=S,s,OR,OR,y,2022,2022,c-r-ot,S,State Senate,6466,5681116.34
+dt=1&y=2022&s=AR&y=2022&c-r-ot=S,s,AR,AR,y,2022,2022,c-r-ot,S,State Senate,7870,5657930.98
+dt=1&y=2022&s=IA&y=2022&c-r-ot=S,s,IA,IA,y,2022,2022,c-r-ot,S,State Senate,22783,5647024.32
+dt=1&y=2022&s=WI&y=2022&c-r-ot=O,s,WI,WI,y,2022,2022,c-r-ot,O,Other Statewide,22242,5548155.88
+dt=1&y=2022&s=OK&y=2022&c-r-ot=S,s,OK,OK,y,2022,2022,c-r-ot,S,State Senate,11490,5225761.25
+dt=1&y=2022&s=AL&y=2022&c-r-ot=O,s,AL,AL,y,2022,2022,c-r-ot,O,Other Statewide,4246,5059968.84
+dt=1&y=2022&s=AR&y=2022&c-r-ot=O,s,AR,AR,y,2022,2022,c-r-ot,O,Other Statewide,9306,4893661.48
+dt=1&y=2022&s=TN&y=2022&c-r-ot=S,s,TN,TN,y,2022,2022,c-r-ot,S,State Senate,5217,4811521.63
+dt=1&y=2022&s=IA&y=2022&c-r-ot=H,s,IA,IA,y,2022,2022,c-r-ot,H,State House/Assembly,21874,4707976.2
+dt=1&y=2022&s=UT&y=2022&c-r-ot=H,s,UT,UT,y,2022,2022,c-r-ot,H,State House/Assembly,8752,4446885.5
+dt=1&y=2022&s=UT&y=2022&c-r-ot=S,s,UT,UT,y,2022,2022,c-r-ot,S,State Senate,4826,4320374.78
+dt=1&y=2022&s=RI&y=2022&c-r-ot=H,s,RI,RI,y,2022,2022,c-r-ot,H,State House/Assembly,19006,4121409.72
+dt=1&y=2022&s=CO&y=2022&c-r-ot=S,s,CO,CO,y,2022,2022,c-r-ot,S,State Senate,15212,3998563.86
+dt=1&y=2022&s=AL&y=2022&c-r-ot=J,s,AL,AL,y,2022,2022,c-r-ot,J,State Supreme Court,1223,3992120.87
+dt=1&y=2022&s=LA&y=2022&c-r-ot=K,s,LA,LA,y,2022,2022,c-r-ot,K,Appellate Court,3078,3957897.31
+dt=1&y=2022&s=MN&y=2022&c-r-ot=H,s,MN,MN,y,2022,2022,c-r-ot,H,State House/Assembly,7369,3950759.21
+dt=1&y=2022&s=NE&y=2022&c-r-ot=S,s,NE,NE,y,2022,2022,c-r-ot,S,State Senate,5716,3943990.08
+dt=1&y=2022&s=KY&y=2022&c-r-ot=S,s,KY,KY,y,2022,2022,c-r-ot,S,State Senate,9109,3753776.71
+dt=1&y=2022&s=MN&y=2022&c-r-ot=S,s,MN,MN,y,2022,2022,c-r-ot,S,State Senate,6303,3731265.94
+dt=1&y=2022&s=WI&y=2022&c-r-ot=S,s,WI,WI,y,2022,2022,c-r-ot,S,State Senate,15542,3721579.4
+dt=1&y=2022&s=IA&y=2022&c-r-ot=O,s,IA,IA,y,2022,2022,c-r-ot,O,Other Statewide,12710,3649120.46
+dt=1&y=2022&s=NV&y=2022&c-r-ot=S,s,NV,NV,y,2022,2022,c-r-ot,S,State Senate,2788,3451361.33
+dt=1&y=2022&s=ID&y=2022&c-r-ot=H,s,ID,ID,y,2022,2022,c-r-ot,H,State House/Assembly,10596,3316781.06
+dt=1&y=2022&s=MN&y=2022&c-r-ot=O,s,MN,MN,y,2022,2022,c-r-ot,O,Other Statewide,6173,3252360.06
+dt=1&y=2022&s=AK&y=2022&c-r-ot=H,s,AK,AK,y,2022,2022,c-r-ot,H,State House/Assembly,13888,3145550.73
+dt=1&y=2022&s=WV&y=2022&c-r-ot=H,s,WV,WV,y,2022,2022,c-r-ot,H,State House/Assembly,8016,3121037.28
+dt=1&y=2022&s=ID&y=2022&c-r-ot=O,s,ID,ID,y,2022,2022,c-r-ot,O,Other Statewide,6069,2921412.33
+dt=1&y=2022&s=ME&y=2022&c-r-ot=S,s,ME,ME,y,2022,2022,c-r-ot,S,State Senate,3414,2884032.45
+dt=1&y=2022&s=HI&y=2022&c-r-ot=H,s,HI,HI,y,2022,2022,c-r-ot,H,State House/Assembly,4885,2825177.11
+dt=1&y=2022&s=RI&y=2022&c-r-ot=S,s,RI,RI,y,2022,2022,c-r-ot,S,State Senate,14590,2746057.22
 dt=1&y=2022&s=TX&y=2022&c-r-ot=K,s,TX,TX,y,2022,2022,c-r-ot,K,Appellate Court,3643,2601318.47
-dt=1&y=2022&s=ID&y=2022&c-r-ot=H,s,ID,ID,y,2022,2022,c-r-ot,H,State House/Assembly,7478,2497087.13
+dt=1&y=2022&s=KS&y=2022&c-r-ot=H,s,KS,KS,y,2022,2022,c-r-ot,H,State House/Assembly,11998,2589559.14
+dt=1&y=2022&s=HI&y=2022&c-r-ot=S,s,HI,HI,y,2022,2022,c-r-ot,S,State Senate,4225,2569765.63
+dt=1&y=2022&s=ME&y=2022&c-r-ot=H,s,ME,ME,y,2022,2022,c-r-ot,H,State House/Assembly,6506,2503528.46
+dt=1&y=2022&s=CT&y=2022&c-r-ot=O,s,CT,CT,y,2022,2022,c-r-ot,O,Other Statewide,4814,2479542.91
 dt=1&y=2022&s=SC&y=2022&c-r-ot=O,s,SC,SC,y,2022,2022,c-r-ot,O,Other Statewide,4414,2392813.57
-dt=1&y=2022&s=NV&y=2022&c-r-ot=S,s,NV,NV,y,2022,2022,c-r-ot,S,State Senate,1630,2390856.21
-dt=1&y=2022&s=ID&y=2022&c-r-ot=O,s,ID,ID,y,2022,2022,c-r-ot,O,Other Statewide,4772,2363287.94
-dt=1&y=2022&s=RI&y=2022&c-r-ot=G,s,RI,RI,y,2022,2022,c-r-ot,G,Gubernatorial,6698,2311958.11
-dt=1&y=2022&s=KY&y=2022&c-r-ot=S,s,KY,KY,y,2022,2022,c-r-ot,S,State Senate,7674,2277529.32
-dt=1&y=2022&s=IN&y=2022&c-r-ot=O,s,IN,IN,y,2022,2022,c-r-ot,O,Other Statewide,3437,2065033.14
-dt=1&y=2022&s=WA&y=2022&c-r-ot=S,s,WA,WA,y,2022,2022,c-r-ot,S,State Senate,6445,1943940.84
-dt=1&y=2022&s=NE&y=2022&c-r-ot=O,s,NE,NE,y,2022,2022,c-r-ot,O,Other Statewide,2007,1932831.87
-dt=1&y=2022&s=ID&y=2022&c-r-ot=S,s,ID,ID,y,2022,2022,c-r-ot,S,State Senate,4955,1785478.46
-dt=1&y=2022&s=AK&y=2022&c-r-ot=H,s,AK,AK,y,2022,2022,c-r-ot,H,State House/Assembly,6977,1732412.81
+dt=1&y=2022&s=AK&y=2022&c-r-ot=S,s,AK,AK,y,2022,2022,c-r-ot,S,State Senate,8862,2320497.51
+dt=1&y=2022&s=ID&y=2022&c-r-ot=S,s,ID,ID,y,2022,2022,c-r-ot,S,State Senate,7096,2258538.07
+dt=1&y=2022&s=KS&y=2022&c-r-ot=O,s,KS,KS,y,2022,2022,c-r-ot,O,Other Statewide,7505,2241455.84
+dt=1&y=2022&s=MI&y=2022&c-r-ot=J,s,MI,MI,y,2022,2022,c-r-ot,J,State Supreme Court,11930,2230478.51
+dt=1&y=2022&s=NE&y=2022&c-r-ot=O,s,NE,NE,y,2022,2022,c-r-ot,O,Other Statewide,2438,2162340.52
+dt=1&y=2022&s=NH&y=2022&c-r-ot=G,s,NH,NH,y,2022,2022,c-r-ot,G,Gubernatorial,12046,2153891.01
+dt=1&y=2022&s=RI&y=2022&c-r-ot=O,s,RI,RI,y,2022,2022,c-r-ot,O,Other Statewide,4481,2068150.87
+dt=1&y=2022&s=IN&y=2022&c-r-ot=O,s,IN,IN,y,2022,2022,c-r-ot,O,Other Statewide,3600,2066227.95
+dt=1&y=2022&s=WV&y=2022&c-r-ot=S,s,WV,WV,y,2022,2022,c-r-ot,S,State Senate,3021,2021779.08
 dt=1&y=2022&s=NC&y=2022&c-r-ot=J,s,NC,NC,y,2022,2022,c-r-ot,J,State Supreme Court,6902,1728780.05
-dt=1&y=2022&s=MN&y=2022&c-r-ot=H,s,MN,MN,y,2022,2022,c-r-ot,H,State House/Assembly,2709,1700311.43
-dt=1&y=2022&s=IL&y=2022&c-r-ot=K,s,IL,IL,y,2022,2022,c-r-ot,K,Appellate Court,1111,1537232.56
-dt=1&y=2022&s=MN&y=2022&c-r-ot=O,s,MN,MN,y,2022,2022,c-r-ot,O,Other Statewide,3024,1490700.27
-dt=1&y=2022&s=CO&y=2022&c-r-ot=S,s,CO,CO,y,2022,2022,c-r-ot,S,State Senate,6459,1393548.81
-dt=1&y=2022&s=AK&y=2022&c-r-ot=S,s,AK,AK,y,2022,2022,c-r-ot,S,State Senate,5311,1337502.53
+dt=1&y=2022&s=IL&y=2022&c-r-ot=K,s,IL,IL,y,2022,2022,c-r-ot,K,Appellate Court,1422,1630127.31
+dt=1&y=2022&s=NH&y=2022&c-r-ot=S,s,NH,NH,y,2022,2022,c-r-ot,S,State Senate,3865,1550216.39
+dt=1&y=2022&s=WY&y=2022&c-r-ot=O,s,WY,WY,y,2022,2022,c-r-ot,O,Other Statewide,1214,1429528.27
+dt=1&y=2022&s=OR&y=2022&c-r-ot=O,s,OR,OR,y,2022,2022,c-r-ot,O,Other Statewide,819,1322649.6
+dt=1&y=2022&s=WY&y=2022&c-r-ot=H,s,WY,WY,y,2022,2022,c-r-ot,H,State House/Assembly,2554,1314807.88
 dt=1&y=2022&s=TX&y=2022&c-r-ot=J,s,TX,TX,y,2022,2022,c-r-ot,J,State Supreme Court,1286,1295520.86
 dt=1&y=2022&s=SD&y=2022&c-r-ot=H,s,SD,SD,y,2022,2022,c-r-ot,H,State House/Assembly,2354,1291214.42
-dt=1&y=2022&s=MN&y=2022&c-r-ot=S,s,MN,MN,y,2022,2022,c-r-ot,S,State Senate,1944,1238047.43
-dt=1&y=2022&s=OR&y=2022&c-r-ot=O,s,OR,OR,y,2022,2022,c-r-ot,O,Other Statewide,703,1080274.6
-dt=1&y=2022&s=MT&y=2022&c-r-ot=S,s,MT,MT,y,2022,2022,c-r-ot,S,State Senate,5438,883414.27
-dt=1&y=2022&s=KS&y=2022&c-r-ot=H,s,KS,KS,y,2022,2022,c-r-ot,H,State House/Assembly,4046,850883.37
-dt=1&y=2022&s=WI&y=2022&c-r-ot=K,s,WI,WI,y,2022,2022,c-r-ot,K,Appellate Court,1259,803271.66
-dt=1&y=2022&s=WV&y=2022&c-r-ot=S,s,WV,WV,y,2022,2022,c-r-ot,S,State Senate,773,767466.2
-dt=1&y=2022&s=KS&y=2022&c-r-ot=O,s,KS,KS,y,2022,2022,c-r-ot,O,Other Statewide,1811,715876.83
+dt=1&y=2022&s=MO&y=2022&c-r-ot=O,s,MO,MO,y,2022,2022,c-r-ot,O,Other Statewide,824,1286489.48
+dt=1&y=2022&s=VT&y=2022&c-r-ot=G,s,VT,VT,y,2022,2022,c-r-ot,G,Gubernatorial,2513,1244660.55
+dt=1&y=2022&s=MT&y=2022&c-r-ot=H,s,MT,MT,y,2022,2022,c-r-ot,H,State House/Assembly,7248,1235110.7
+dt=1&y=2022&s=NM&y=2022&c-r-ot=J,s,NM,NM,y,2022,2022,c-r-ot,J,State Supreme Court,604,1154787.0
+dt=1&y=2022&s=KY&y=2022&c-r-ot=J,s,KY,KY,y,2022,2022,c-r-ot,J,State Supreme Court,1670,1117750.63
+dt=1&y=2022&s=LA&y=2022&c-r-ot=S,s,LA,LA,y,2022,2022,c-r-ot,S,State Senate,2044,1113011.95
+dt=1&y=2022&s=DE&y=2022&c-r-ot=H,s,DE,DE,y,2022,2022,c-r-ot,H,State House/Assembly,4324,1026816.1
+dt=1&y=2022&s=WY&y=2022&c-r-ot=G,s,WY,WY,y,2022,2022,c-r-ot,G,Gubernatorial,1567,1011631.3
+dt=1&y=2022&s=VT&y=2022&c-r-ot=H,s,VT,VT,y,2022,2022,c-r-ot,H,State House/Assembly,2719,967553.77
+dt=1&y=2022&s=MT&y=2022&c-r-ot=J,s,MT,MT,y,2022,2022,c-r-ot,J,State Supreme Court,3113,910271.7
+dt=1&y=2022&s=KY&y=2022&c-r-ot=K,s,KY,KY,y,2022,2022,c-r-ot,K,Appellate Court,1379,907028.86
+dt=1&y=2022&s=MT&y=2022&c-r-ot=S,s,MT,MT,y,2022,2022,c-r-ot,S,State Senate,5439,883429.27
+dt=1&y=2022&s=NM&y=2022&c-r-ot=K,s,NM,NM,y,2022,2022,c-r-ot,K,Appellate Court,390,857457.25
+dt=1&y=2022&s=WI&y=2022&c-r-ot=K,s,WI,WI,y,2022,2022,c-r-ot,K,Appellate Court,1260,803108.96
+dt=1&y=2022&s=AR&y=2022&c-r-ot=J,s,AR,AR,y,2022,2022,c-r-ot,J,State Supreme Court,667,793203.18
+dt=1&y=2022&s=WA&y=2022&c-r-ot=O,s,WA,WA,y,2022,2022,c-r-ot,O,Other Statewide,2288,715127.07
 dt=1&y=2022&s=SD&y=2022&c-r-ot=S,s,SD,SD,y,2022,2022,c-r-ot,S,State Senate,1023,712019.2
-dt=1&y=2022&s=OH&y=2022&c-r-ot=J,s,OH,OH,y,2022,2022,c-r-ot,J,State Supreme Court,1200,711525.29
-dt=1&y=2022&s=ME&y=2022&c-r-ot=H,s,ME,ME,y,2022,2022,c-r-ot,H,State House/Assembly,4058,691859.7
-dt=1&y=2022&s=VT&y=2022&c-r-ot=G,s,VT,VT,y,2022,2022,c-r-ot,G,Gubernatorial,1195,661773.82
-dt=1&y=2022&s=ME&y=2022&c-r-ot=S,s,ME,ME,y,2022,2022,c-r-ot,S,State Senate,2451,654441.57
-dt=1&y=2022&s=GA&y=2022&c-r-ot=J,s,GA,GA,y,2022,2022,c-r-ot,J,State Supreme Court,887,654333.2
-dt=1&y=2022&s=AR&y=2022&c-r-ot=J,s,AR,AR,y,2022,2022,c-r-ot,J,State Supreme Court,472,626673.26
+dt=1&y=2022&s=DE&y=2022&c-r-ot=S,s,DE,DE,y,2022,2022,c-r-ot,S,State Senate,2801,711341.66
+dt=1&y=2022&s=GA&y=2022&c-r-ot=J,s,GA,GA,y,2022,2022,c-r-ot,J,State Supreme Court,1035,700142.67
+dt=1&y=2022&s=CT&y=2022&c-r-ot=H,s,CT,CT,y,2022,2022,c-r-ot,H,State House/Assembly,13733,664853.13
+dt=1&y=2022&s=NH&y=2022&c-r-ot=O,s,NH,NH,y,2022,2022,c-r-ot,O,Other Statewide,2566,617463.26
+dt=1&y=2022&s=LA&y=2022&c-r-ot=O,s,LA,LA,y,2022,2022,c-r-ot,O,Other Statewide,1172,613583.22
+dt=1&y=2022&s=VT&y=2022&c-r-ot=O,s,VT,VT,y,2022,2022,c-r-ot,O,Other Statewide,1041,611813.93
 dt=1&y=2022&s=NC&y=2022&c-r-ot=K,s,NC,NC,y,2022,2022,c-r-ot,K,Appellate Court,1656,593087.84
 dt=1&y=2022&s=SC&y=2022&c-r-ot=S,s,SC,SC,y,2022,2022,c-r-ot,S,State Senate,855,574371.73
-dt=1&y=2022&s=CT&y=2022&c-r-ot=H,s,CT,CT,y,2022,2022,c-r-ot,H,State House/Assembly,9639,502059.08
-dt=1&y=2022&s=WV&y=2022&c-r-ot=H,s,WV,WV,y,2022,2022,c-r-ot,H,State House/Assembly,1196,492893.83
-dt=1&y=2022&s=NH&y=2022&c-r-ot=S,s,NH,NH,y,2022,2022,c-r-ot,S,State Senate,1598,466385.13
-dt=1&y=2022&s=UT&y=2022&c-r-ot=S,s,UT,UT,y,2022,2022,c-r-ot,S,State Senate,529,451778.0
-dt=1&y=2022&s=GA&y=2022&c-r-ot=K,s,GA,GA,y,2022,2022,c-r-ot,K,Appellate Court,661,440597.15
-dt=1&y=2022&s=MT&y=2022&c-r-ot=J,s,MT,MT,y,2022,2022,c-r-ot,J,State Supreme Court,1362,425294.57
-dt=1&y=2022&s=AR&y=2022&c-r-ot=K,s,AR,AR,y,2022,2022,c-r-ot,K,Appellate Court,815,415884.05
-dt=1&y=2022&s=VT&y=2022&c-r-ot=O,s,VT,VT,y,2022,2022,c-r-ot,O,Other Statewide,596,389028.28
-dt=1&y=2022&s=KY&y=2022&c-r-ot=J,s,KY,KY,y,2022,2022,c-r-ot,J,State Supreme Court,714,373994.16
-dt=1&y=2022&s=KY&y=2022&c-r-ot=K,s,KY,KY,y,2022,2022,c-r-ot,K,Appellate Court,765,372366.47
-dt=1&y=2022&s=NM&y=2022&c-r-ot=J,s,NM,NM,y,2022,2022,c-r-ot,J,State Supreme Court,574,349079.6
-dt=1&y=2022&s=CT&y=2022&c-r-ot=S,s,CT,CT,y,2022,2022,c-r-ot,S,State Senate,3672,303023.11
-dt=1&y=2022&s=NH&y=2022&c-r-ot=O,s,NH,NH,y,2022,2022,c-r-ot,O,Other Statewide,1245,295269.4
-dt=1&y=2022&s=WY&y=2022&c-r-ot=G,s,WY,WY,y,2022,2022,c-r-ot,G,Gubernatorial,388,285579.06
-dt=1&y=2022&s=VT&y=2022&c-r-ot=H,s,VT,VT,y,2022,2022,c-r-ot,H,State House/Assembly,754,268542.08
-dt=1&y=2022&s=NM&y=2022&c-r-ot=K,s,NM,NM,y,2022,2022,c-r-ot,K,Appellate Court,378,253932.95
-dt=1&y=2022&s=CT&y=2022&c-r-ot=O,s,CT,CT,y,2022,2022,c-r-ot,O,Other Statewide,2328,240203.13
-dt=1&y=2022&s=MT&y=2022&c-r-ot=O,s,MT,MT,y,2022,2022,c-r-ot,O,Other Statewide,774,202975.47
-dt=1&y=2022&s=MT&y=2022&c-r-ot=H,s,MT,MT,y,2022,2022,c-r-ot,H,State House/Assembly,1127,188082.74
-dt=1&y=2022&s=VT&y=2022&c-r-ot=S,s,VT,VT,y,2022,2022,c-r-ot,S,State Senate,405,170946.92
-dt=1&y=2022&s=WY&y=2022&c-r-ot=O,s,WY,WY,y,2022,2022,c-r-ot,O,Other Statewide,30,162093.0
-dt=1&y=2022&s=OR&y=2022&c-r-ot=K,s,OR,OR,y,2022,2022,c-r-ot,K,Appellate Court,394,161401.88
-dt=1&y=2022&s=WA&y=2022&c-r-ot=O,s,WA,WA,y,2022,2022,c-r-ot,O,Other Statewide,334,146715.02
+dt=1&y=2022&s=VT&y=2022&c-r-ot=S,s,VT,VT,y,2022,2022,c-r-ot,S,State Senate,1415,572466.22
+dt=1&y=2022&s=DE&y=2022&c-r-ot=O,s,DE,DE,y,2022,2022,c-r-ot,O,Other Statewide,1470,533067.22
+dt=1&y=2022&s=CT&y=2022&c-r-ot=S,s,CT,CT,y,2022,2022,c-r-ot,S,State Senate,6952,523016.41
+dt=1&y=2022&s=WY&y=2022&c-r-ot=S,s,WY,WY,y,2022,2022,c-r-ot,S,State Senate,885,493842.17
+dt=1&y=2022&s=AR&y=2022&c-r-ot=K,s,AR,AR,y,2022,2022,c-r-ot,K,Appellate Court,879,475251.66
+dt=1&y=2022&s=GA&y=2022&c-r-ot=K,s,GA,GA,y,2022,2022,c-r-ot,K,Appellate Court,665,441597.15
+dt=1&y=2022&s=GA&y=2022&c-r-ot=H,s,GA,GA,y,2022,2022,c-r-ot,H,State House/Assembly,577,307840.49
+dt=1&y=2022&s=MT&y=2022&c-r-ot=O,s,MT,MT,y,2022,2022,c-r-ot,O,Other Statewide,1259,289955.47
+dt=1&y=2022&s=UT&y=2022&c-r-ot=O,s,UT,UT,y,2022,2022,c-r-ot,O,Other Statewide,805,269108.97
+dt=1&y=2022&s=OR&y=2022&c-r-ot=K,s,OR,OR,y,2022,2022,c-r-ot,K,Appellate Court,401,176061.88
+dt=1&y=2022&s=HI&y=2022&c-r-ot=O,s,HI,HI,y,2022,2022,c-r-ot,O,Other Statewide,269,151024.13
+dt=1&y=2022&s=WA&y=2022&c-r-ot=J,s,WA,WA,y,2022,2022,c-r-ot,J,State Supreme Court,365,144594.69
 dt=1&y=2022&s=LA&y=2022&c-r-ot=H,s,LA,LA,y,2022,2022,c-r-ot,H,State House/Assembly,275,133072.83
 dt=1&y=2022&s=ND&y=2022&c-r-ot=H,s,ND,ND,y,2022,2022,c-r-ot,H,State House/Assembly,93,118460.53
-dt=1&y=2022&s=UT&y=2022&c-r-ot=H,s,UT,UT,y,2022,2022,c-r-ot,H,State House/Assembly,260,92339.14
+dt=1&y=2022&s=NH&y=2022&c-r-ot=H,s,NH,NH,y,2022,2022,c-r-ot,H,State House/Assembly,392,82620.68
+dt=1&y=2022&s=GA&y=2022&c-r-ot=S,s,GA,GA,y,2022,2022,c-r-ot,S,State Senate,123,80050.68
 dt=1&y=2022&s=NJ-HC&y=2022&c-r-ot=C,s,NJ-HC,NJ-HC,y,2022,2022,c-r-ot,C,Local Elections,53,76854.0
-dt=1&y=2022&s=DE&y=2022&c-r-ot=H,s,DE,DE,y,2022,2022,c-r-ot,H,State House/Assembly,193,55758.91
+dt=1&y=2022&s=MI&y=2022&c-r-ot=K,s,MI,MI,y,2022,2022,c-r-ot,K,Appellate Court,24,51237.33
 dt=1&y=2022&s=ND&y=2022&c-r-ot=S,s,ND,ND,y,2022,2022,c-r-ot,S,State Senate,54,40693.0
-dt=1&y=2022&s=NH&y=2022&c-r-ot=G,s,NH,NH,y,2022,2022,c-r-ot,G,Gubernatorial,86,39882.99
-dt=1&y=2022&s=WY&y=2022&c-r-ot=S,s,WY,WY,y,2022,2022,c-r-ot,S,State Senate,12,11600.0
+dt=1&y=2022&s=KS&y=2022&c-r-ot=S,s,KS,KS,y,2022,2022,c-r-ot,S,State Senate,80,37471.33
+dt=1&y=2022&s=LA&y=2022&c-r-ot=J,s,LA,LA,y,2022,2022,c-r-ot,J,State Supreme Court,9,23950.0
+dt=1&y=2022&s=WA&y=2022&c-r-ot=K,s,WA,WA,y,2022,2022,c-r-ot,K,Appellate Court,110,23141.19
+dt=1&y=2022&s=MS&y=2022&c-r-ot=K,s,MS,MS,y,2022,2022,c-r-ot,K,Appellate Court,19,18199.0
 dt=1&y=2022&s=ND&y=2022&c-r-ot=O,s,ND,ND,y,2022,2022,c-r-ot,O,Other Statewide,9,10734.0
-dt=1&y=2022&s=HI&y=2022&c-r-ot=S,s,HI,HI,y,2022,2022,c-r-ot,S,State Senate,13,6382.9
-dt=1&y=2022&s=WY&y=2022&c-r-ot=H,s,WY,WY,y,2022,2022,c-r-ot,H,State House/Assembly,14,5650.0
-dt=1&y=2022&s=NH&y=2022&c-r-ot=H,s,NH,NH,y,2022,2022,c-r-ot,H,State House/Assembly,81,4863.63
-dt=1&y=2022&s=DC&y=2022&c-r-ot=C,s,DC,DC,y,2022,2022,c-r-ot,C,Local Elections,0,0.0
 dt=1&y=2022&s=FL&y=2022&c-r-ot=J,s,FL,FL,y,2022,2022,c-r-ot,J,State Supreme Court,0,0.0
 dt=1&y=2022&s=FL&y=2022&c-r-ot=K,s,FL,FL,y,2022,2022,c-r-ot,K,Appellate Court,0,0.0
-dt=1&y=2022&s=GA&y=2022&c-r-ot=H,s,GA,GA,y,2022,2022,c-r-ot,H,State House/Assembly,0,0.0
-dt=1&y=2022&s=GA&y=2022&c-r-ot=S,s,GA,GA,y,2022,2022,c-r-ot,S,State Senate,0,0.0
-dt=1&y=2022&s=HI&y=2022&c-r-ot=G,s,HI,HI,y,2022,2022,c-r-ot,G,Gubernatorial,0,0.0
-dt=1&y=2022&s=HI&y=2022&c-r-ot=H,s,HI,HI,y,2022,2022,c-r-ot,H,State House/Assembly,0,0.0
-dt=1&y=2022&s=HI&y=2022&c-r-ot=O,s,HI,HI,y,2022,2022,c-r-ot,O,Other Statewide,0,0.0
 dt=1&y=2022&s=IN&y=2022&c-r-ot=J,s,IN,IN,y,2022,2022,c-r-ot,J,State Supreme Court,0,0.0
 dt=1&y=2022&s=IN&y=2022&c-r-ot=K,s,IN,IN,y,2022,2022,c-r-ot,K,Appellate Court,0,0.0
-dt=1&y=2022&s=KS&y=2022&c-r-ot=S,s,KS,KS,y,2022,2022,c-r-ot,S,State Senate,0,0.0
-dt=1&y=2022&s=MO&y=2022&c-r-ot=H,s,MO,MO,y,2022,2022,c-r-ot,H,State House/Assembly,0,0.0
-dt=1&y=2022&s=MO&y=2022&c-r-ot=O,s,MO,MO,y,2022,2022,c-r-ot,O,Other Statewide,0,0.0
-dt=1&y=2022&s=MO&y=2022&c-r-ot=S,s,MO,MO,y,2022,2022,c-r-ot,S,State Senate,0,0.0
+dt=1&y=2022&s=KS&y=2022&c-r-ot=J,s,KS,KS,y,2022,2022,c-r-ot,J,State Supreme Court,0,0.0
+dt=1&y=2022&s=KS&y=2022&c-r-ot=K,s,KS,KS,y,2022,2022,c-r-ot,K,Appellate Court,0,0.0
+dt=1&y=2022&s=MD&y=2022&c-r-ot=K,s,MD,MD,y,2022,2022,c-r-ot,K,Appellate Court,0,0.0
 dt=1&y=2022&s=MS&y=2022&c-r-ot=H,s,MS,MS,y,2022,2022,c-r-ot,H,State House/Assembly,0,0.0
-dt=1&y=2022&s=OH&y=2022&c-r-ot=H,s,OH,OH,y,2022,2022,c-r-ot,H,State House/Assembly,0,0.0
-dt=1&y=2022&s=OH&y=2022&c-r-ot=S,s,OH,OH,y,2022,2022,c-r-ot,S,State Senate,0,0.0
+dt=1&y=2022&s=NJ&y=2022&c-r-ot=H,s,NJ,NJ,y,2022,2022,c-r-ot,H,State House/Assembly,0,0.0
+dt=1&y=2022&s=NJ&y=2022&c-r-ot=S,s,NJ,NJ,y,2022,2022,c-r-ot,S,State Senate,0,0.0
 dt=1&y=2022&s=OR&y=2022&c-r-ot=J,s,OR,OR,y,2022,2022,c-r-ot,J,State Supreme Court,0,0.0
 dt=1&y=2022&s=SD&y=2022&c-r-ot=O,s,SD,SD,y,2022,2022,c-r-ot,O,Other Statewide,0,0.0
-dt=1&y=2022&s=UT&y=2022&c-r-ot=O,s,UT,UT,y,2022,2022,c-r-ot,O,Other Statewide,0,0.0
 dt=1&y=2022&s=VA&y=2022&c-r-ot=H,s,VA,VA,y,2022,2022,c-r-ot,H,State House/Assembly,0,0.0
-dt=1&y=2022&s=WA&y=2022&c-r-ot=J,s,WA,WA,y,2022,2022,c-r-ot,J,State Supreme Court,0,0.0
