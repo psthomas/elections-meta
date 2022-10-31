@@ -1,7 +1,6 @@
 state,office,forecast
 Alabama,house,Safe R
 Alaska,house,Lean R
-Arizona,house,Likely R
 Arkansas,house,Safe R
 California,house,Safe D
 Colorado,house,Likely D
@@ -20,13 +19,10 @@ Louisiana,house,No races in 2022
 Maine,house,Toss-up
 Maryland,house,Safe D
 Massachusetts,house,Safe D
-Michigan,house,Lean R
 Minnesota,house,Toss-up
 Mississippi,house,No races in 2022
 Missouri,house,Safe R
 Montana,house,Safe R
-Nevada,house,Likely D
-New Hampshire,house,Likely R
 New Jersey,house,No races in 2022
 New Mexico,house,Likely D
 New York,house,Safe D
@@ -35,7 +31,6 @@ North Dakota,house,Safe R
 Ohio,house,Safe R
 Oklahoma,house,Safe R
 Oregon,house,Likely D
-Pennsylvania,house,Likely R
 Rhode Island,house,Safe D
 South Carolina,house,Safe R
 South Dakota,house,Safe R
@@ -48,9 +43,13 @@ Washington,house,Safe D
 West Virginia,house,Safe R
 Wisconsin,house,Safe R
 Wyoming,house,Safe R
+Arizona,house,Leans R
+Michigan,house,Toss-up
+Nevada,house,Leans D
+New Hampshire,house,Leans R
+Pennsylvania,house,Leans R
 Alabama,senate,Safe R
 Alaska,senate,Likely R
-Arizona,senate,Likely R
 Arkansas,senate,Safe R
 California,senate,Safe D
 Colorado,senate,Leans D
@@ -69,13 +68,10 @@ Louisiana,senate,No races in 2022
 Maine,senate,Toss-up
 Maryland,senate,Safe D
 Massachusetts,senate,Safe D
-Michigan,senate,Toss-up
 Minnesota,senate,Lean R
 Mississippi,senate,No races in 2022
 Missouri,senate,Safe R
 Montana,senate,Safe R
-Nevada,senate,Lean D
-New Hampshire,senate,Likely R
 New Jersey,senate,No races in 2022
 New Mexico,senate,No races in 2022
 New York,senate,Likely D
@@ -84,7 +80,6 @@ North Dakota,senate,Safe R
 Ohio,senate,Safe R
 Oklahoma,senate,Safe R
 Oregon,senate,Lean D
-Pennsylvania,senate,Likely R
 Rhode Island,senate,Safe D
 South Carolina,senate,No races in 2022
 South Dakota,senate,Safe R
@@ -97,3 +92,8 @@ Washington,senate,Safe D
 West Virginia,senate,Safe R
 Wisconsin,senate,Safe R
 Wyoming,senate,Safe R
+Arizona,senate,Toss-up
+Michigan,senate,Toss-up
+Nevada,senate,Toss-up
+New Hampshire,senate,Likely R
+Pennsylvania,senate,Likely R
