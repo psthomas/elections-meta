@@ -186,7 +186,8 @@ def get_jacobson(save_loc='', archive_loc=''):
     states = soup.find_all('strong')
     states = states[1:-1] # Pop the ends off
     states = [el.string.title() for el in states]
-    states.remove('Nebraska')
+    if 'Nebraska' in states:
+        states.remove('Nebraska')
     state_results['state'] = states
     
     ratings = soup.find_all('em')
@@ -198,6 +199,18 @@ def get_jacobson(save_loc='', archive_loc=''):
     state_results['house'] = house_ratings
     state_results['senate'] = senate_ratings
     state_forecast = pd.DataFrame(state_results)
+
+    # Updated, 10/20/2022, but only mentions changed districts
+    # Not machine readable, so hardcode it and replace:
+    # 'https://centerforpolitics.org/crystalball/articles/the-updated-battle-for-the-statehouses/'
+    state_updates = pd.DataFrame({
+        'state': ['Arizona', 'Michigan', 'Nevada', 'New Hampshire', 'Pennsylvania'],
+        'senate': ['Toss-up', 'Toss-up', 'Toss-up', 'Likely R', 'Likely R'],
+        'house': ['Leans R', 'Toss-up', 'Leans D', 'Leans R', 'Leans R']
+    })
+    state_forecast = state_forecast[~state_forecast['state'].isin(state_updates['state'])]
+    state_forecast = pd.concat([state_forecast, state_updates])
+
     # Replace only works on substrings if regex=True
     state_forecast = state_forecast.replace('.\(flip\)', '', regex=True)
     state_forecast = state_forecast.melt(
